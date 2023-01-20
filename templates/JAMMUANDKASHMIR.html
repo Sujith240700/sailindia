@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html>
+        <head>
+            <title>SAIL - JAMMU AND KASHMIR</title>
+        <link rel="icon" href="{{ url_for('static', filename='img/logo.png') }}/" type="image/icon type">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}/">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <style>
+          .row{display:-ms-flexbox;display:flex;justify-content:center;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-right:-15px;}
+body{
+        background-color:black !important;
+
+    }
+        p{
+    color:white !important;
+}
+          </style>
+
+
+</head>
+<body>
+
+    <div id="wrapper">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="/home"><img src="{{ url_for('static', filename='img/logo.png') }}/"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      &#9776;
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                      <ul class="navbar-nav ml-auto text-center">
+                        <li class="nav-item">
+                          <a class="nav-link" href="/home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="/weather">Weather</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href='/signup'>Sign-up</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="/about">About</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </nav>
+
+    </div>
+
+    <div style="height:auto;width:90%;margin:auto;">
+        <h3 style="margin-left: 5%; margin-top:auto;">JAMMU AND KASHMIR</h3>
+        <p style="margin-left: 5%; margin-top:auto;">Jammu and Kashmir is a region administered by India as a state from 1954, constituting the southern and southeastern portion of the larger Kashmir region, which has been the subject of a dispute between India, Pakistan and China since the mid-20th century.The underlying region of this state were parts of the former princely state of Jammu and Kashmir, whose western districts, now known as Azad Kashmir, and northern territories, now known as Gilgit-Baltistan, are administered by Pakistan. The Aksai Chin region in the east, bordering Tibet, has been under Chinese control since 1962.</p>
+        <hr style="margin-left: 5%; margin-top:auto;">
+        <p style="margin-left: 5%; margin-top:auto;">After the Government of India repealed the special status accorded to Jammu and Kashmir under Article 370 of the Indian constitution in 2019, the Parliament of India passed the Jammu and Kashmir Reorganisation Act, which seeks to dissolve the state and reorganise it into two union territories – Jammu and Kashmir in the west and Ladakh in the east. The act will come into effect from 31 October 2019. Jammu and Kashmir is the only state in India with a Muslim-majority population.</p>
+      </div>
+
+
+
+      <div style="height: auto;width:90%;margin:auto;">
+        <h3 style="margin-left:5%;">Tourist Spots</h3>
+
+        <div class="row" >
+          <div class="col-md-3" style="height:70%;width:70%; margin:10px 10px 10px 10px;border-radius: 4px;box-shadow:0 0 1px 1px lightgrey;" >
+            <div class="row" style="padding: 10px 1px; border-radius:2px;">
+
+                        <div class="col-md-auto"  style=" width:auto; height:auto;">
+
+                                <div class="bd-example" >
+                                      <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+
+                                          <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                              <img  src= "https://www.adotrip.com/public/images/areas/5d5132f9ea60b-Alchi%20Monastery%20Travel%20Plan.jpg " class="d-block w-100" alt="...">
+                                              <div class="carousel-caption d-none d-md-block">
+                                              </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                              <img src=" https://www.adotrip.com/public/images/areas/5d5132f986b53-Alchi%20Monastery%20Tours.jpg" class="d-block w-100" alt="...">
+
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="  https://www.adotrip.com/public/images/areas/5d5132fab982a-Alchi%20Monastery%20Trip.jpg" class="d-block w-100" alt="...">
+
+                                              </div>
+                                          </div>
+
+                                      </div>
+                                    </div>
+
+                                    <div class="col-md-auto">
+                                      <h6 class="text-center"> Alchi Monastery</h6>
+                                      <a href=" https://en.wikipedia.org/wiki/Alchi_Monastery" target="_blank"><i class="fa fa-wikipedia-w"></i>wikipedia</a><br>
+                                      <a href= "https://www.google.com/maps/place/Alchi+Monastery+-+Choskhor/@34.2236972,77.1752278,15z/data=!4m5!3m4!1s0x0:0xfe5350522339645b!8m2!3d34.2236972!4d77.1752278" target="_blank"><i class="fa fa-map-marker"></i>Location</a><br>
+                                      <a href=""><i class="fa fa-inbox"></i>Temple</a><br>
+                                      <a href="/weatherpage4#jammu"><i class="fa fa-umbrella"></i>weather</a>
+                                  </div></div>
+
+              </div>
+          </div>
+
+          <div class="col-md-3" style="height:70%;width:70%; margin:10px 10px 10px 10px;border-radius: 4px;box-shadow:0 0 1px 1px lightgrey;" >
+            <div class="row" style="padding: 10px 1px; border-radius:2px;">
+
+                        <div class="col-md-auto"  style=" width:auto; height:auto;">
+
+                                <div class="bd-example" >
+                                      <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+
+                                          <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                              <img  src= "https://www.adotrip.com/public/images/areas/master_images/5c6fdf1a095bc-Spituk_Monastery_Attractions.jpg " class="d-block w-100" alt="...">
+                                              <div class="carousel-caption d-none d-md-block">
+                                              </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                              <img src="https://www.adotrip.com/public/images/areas/5c6fdf174d980-Spituk%20Monastery%20Places%20to%20See.jpg " class="d-block w-100" alt="...">
+
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src=" https://www.adotrip.com/public/images/areas/5c6fdf19a226c-Spituk%20Monastery%20Trip.jpg" class="d-block w-100" alt="...">
+
+                                              </div>
+                                          </div>
+
+                                      </div>
+                                    </div>
+
+                                    <div class="col-md-auto">
+                                      <h6 class="text-center">Spituk Monastery </h6>
+                                      <a href="https://en.wikipedia.org/wiki/Spituk_Monastery " target="_blank"><i class="fa fa-wikipedia-w"></i>wikipedia</a><br>
+                                      <a href= " https://www.google.com/maps/place/Spituk+Gompa/@34.125473,77.5265732,15z/data=!4m5!3m4!1s0x0:0xe076409fb36e3d2b!8m2!3d34.125473!4d77.5265732" target="_blank"><i class="fa fa-map-marker"></i>Location</a><br>
+                                      <a href=""><i class="fa fa-inbox"></i>Temple</a><br>
+                                      <a href="/weatherpage4#jammu"><i class="fa fa-umbrella"></i>weather</a>
+                                  </div></div>
+
+              </div>
+          </div>
+
+          <div class="col-md-3" style="height:70%;width:70%; margin:10px 10px 10px 10px;border-radius: 4px;box-shadow:0 0 1px 1px lightgrey;" >
+            <div class="row" style="padding: 10px 1px; border-radius:2px;">
+
+                        <div class="col-md-auto"  style=" width:auto; height:auto;">
+
+                                <div class="bd-example" >
+                                      <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+
+                                          <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                              <img  src= "http://ttnotes.com/images/hazratbal-mosque-srinagar-1.jpg " class="d-block w-100" alt="...">
+                                              <div class="carousel-caption d-none d-md-block">
+                                              </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                              <img src="http://ttnotes.com/images/hazratbal-mosque-srinagar-1.jpg " class="d-block w-100" alt="...">
+
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="http://ttnotes.com/images/hazratbal-mosque-srinagar-1.jpg" class="d-block w-100" alt="...">
+
+                                              </div>
+                                          </div>
+
+                                      </div>
+                                    </div>
+
+                                    <div class="col-md-auto">
+                                      <h6 class="text-center">Hazratbal Shrine</h6>
+                                      <a href="https://en.wikipedia.org/wiki/Hazratbal_Shrine " target="_blank"><i class="fa fa-wikipedia-w"></i>wikipedia</a><br>
+                                      <a href= "https://www.google.com/maps/place/%D8%AD%D8%B6%D8%B1%D8%AA+%D8%A8%D9%84+%D9%85%D8%B3%D8%AC%D8%AF%DB%94+Hazratbal+Shrine+Mosque%E2%80%AD/@34.133507,74.8263329,13z/data=!4m5!3m4!1s0x0:0x4a53e91d58ab8170!8m2!3d34.1289995!4d74.8425512  " target="_blank"><i class="fa fa-map-marker"></i>Location</a><br>
+                                      <a href=""><i class="fa fa-inbox"></i>Temple </a><br>
+                                      <a href="/weatherpage4#jammu"><i class="fa fa-umbrella"></i>weather</a>
+                                  </div></div>
+
+              </div>
+          </div>
+        </div>
+
+
+        <div class="row" >
+            <div class="col-md-3" style="height:70%;width:70%; margin:10px 10px 10px 10px;border-radius: 4px;box-shadow:0 0 1px 1px lightgrey;" >
+                <div class="row" style="padding: 10px 1px; border-radius:2px;">
+
+                            <div class="col-md-auto"  style=" width:auto; height:auto;">
+
+                                    <div class="bd-example" >
+                                          <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+
+                                              <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                  <img  src= "{{ url_for('static', filename='img/Raghunath2.jpg') }}/" class="d-block w-100" alt="...">
+                                                  <div class="carousel-caption d-none d-md-block">
+                                                  </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                  <img src="{{ url_for('static', filename='img/Raghunath1.jpg') }}/" class="d-block w-100" alt="...">
+
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="{{ url_for('static', filename='img/Raghunath3.jpg') }}/" class="d-block w-100" alt="...">
+
+                                                  </div>
+                                              </div>
+
+                                          </div>
+                                        </div>
+
+                                        <div class="col-md-auto">
+                                          <h6 class="text-center">Raghunath Temple</h6>
+                                          <a href="https://en.wikipedia.org/wiki/Raghunath_Temple" target="_blank"><i class="fa fa-wikipedia-w"></i>wikipedia</a><br>
+                                          <a href= "https://www.google.com/maps/place/Shree+Raghunath+Ji+Temple/@32.7304879,74.8619721,15z/data=!4m5!3m4!1s0x0:0x45bc7c47de6a3103!8m2!3d32.7304879!4d74.8619721" target="_blank"><i class="fa fa-map-marker"></i>Location</a><br>
+                                          <a href=""><i class="fa fa-inbox"></i>Temple</a><br>
+                                          <a href="/weatherpage4#jammu"><i class="fa fa-umbrella"></i>weather</a>
+                                      </div></div>
+
+                  </div>
+              </div>
+
+              <div class="col-md-3" style="height:70%;width:70%; margin:10px 10px 10px 10px;border-radius: 4px;box-shadow:0 0 1px 1px lightgrey;" >
+                <div class="row" style="padding: 10px 1px; border-radius:2px;">
+
+                            <div class="col-md-auto"  style=" width:auto; height:auto;">
+
+                                    <div class="bd-example" >
+                                          <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+
+                                              <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                  <img  src= "{{ url_for('static', filename='img/Chemrey1.jpg') }}/" class="d-block w-100" alt="...">
+                                                  <div class="carousel-caption d-none d-md-block">
+                                                  </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                  <img src="{{ url_for('static', filename='img/Chemrey2.jpg') }}/ " class="d-block w-100" alt="...">
+
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="{{ url_for('static', filename='img/Chemrey3.jpg') }}/" class="d-block w-100" alt="...">
+
+                                                  </div>
+                                              </div>
+
+                                          </div>
+                                        </div>
+
+                                        <div class="col-md-auto">
+                                          <h6 class="text-center">Chemrey Monastery</h6>
+                                          <a href=" https://en.wikipedia.org/wiki/Chemrey_Monastery" target="_blank"><i class="fa fa-wikipedia-w"></i>wikipedia</a><br>
+                                          <a href= "https://www.google.com/maps/place/Chemrey+Gompa/@33.9590905,77.7890953,15z/data=!4m5!3m4!1s0x0:0xa628dcd7701ca5d7!8m2!3d33.9590905!4d77.7890953" target="_blank"><i class="fa fa-map-marker"></i>Location</a><br>
+                                          <a href=""><i class="fa fa-inbox"></i>Temple</a><br>
+                                          <a href="/weatherpage4#jammu"><i class="fa fa-umbrella"></i>weather</a>
+                                      </div></div>
+
+                  </div>
+              </div>
+
+              <div class="col-md-3" style="height:70%;width:70%; margin:10px 10px 10px 10px;border-radius: 4px;box-shadow:0 0 1px 1px lightgrey;" >
+                <div class="row" style="padding: 10px 1px; border-radius:2px;">
+
+                            <div class="col-md-auto"  style=" width:auto; height:auto;">
+
+                                    <div class="bd-example" >
+                                          <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+
+                                              <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                  <img  src= "{{ url_for('static', filename='img/Kardang1.jpg') }}/" class="d-block w-100" alt="...">
+                                                  <div class="carousel-caption d-none d-md-block">
+                                                  </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                  <img src="{{ url_for('static', filename='img/Kardang2.jpg') }}/" class="d-block w-100" alt="...">
+
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="{{ url_for('static', filename='img/Kardang1.jpg') }}/" class="d-block w-100" alt="...">
+
+                                                  </div>
+                                              </div>
+
+                                          </div>
+                                        </div>
+
+                                        <div class="col-md-auto">
+                                          <h6 class="text-center">Kardang Monastery</h6>
+                                          <a href="https://en.wikipedia.org/wiki/Kardang_Monastery" target="_blank"><i class="fa fa-wikipedia-w"></i>wikipedia</a><br>
+                                          <a href= "https://www.google.com/maps/place/Kardang+Monastery/@32.5631811,77.0234459,15z/data=!4m5!3m4!1s0x0:0x1ac81d1a2ac55d4a!8m2!3d32.5631811!4d77.0234459" target="_blank"><i class="fa fa-map-marker"></i>Location</a><br>
+                                          <a href=""><i class="fa fa-inbox"></i>Temple </a><br>
+                                          <a href="/weatherpage4#jammu"><i class="fa fa-umbrella"></i>weather</a>
+                                      </div></div>
+
+                  </div>
+              </div>
+        </div>
+
+
+        <div class="row" >
+            <div class="col-md-3" style="height:70%;width:70%; margin:10px 10px 10px 10px;border-radius: 4px;box-shadow:0 0 1px 1px lightgrey;" >
+                <div class="row" style="padding: 10px 1px; border-radius:2px;">
+
+                            <div class="col-md-auto"  style=" width:auto; height:auto;">
+
+                                    <div class="bd-example" >
+                                          <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+
+                                              <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                  <img  src= "{{ url_for('static', filename='img/Khanqah3.jpg') }}/" class="d-block w-100" alt="...">
+                                                  <div class="carousel-caption d-none d-md-block">
+                                                  </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                  <img src="{{ url_for('static', filename='img/Khanqah2.jpg') }}/" class="d-block w-100" alt="...">
+
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="{{ url_for('static', filename='img/Khanqah1.jpg') }}/" class="d-block w-100" alt="...">
+
+                                                  </div>
+                                              </div>
+
+                                          </div>
+                                        </div>
+
+                                        <div class="col-md-auto">
+                                          <h6 class="text-center">Khanqah-e-Moula</h6>
+                                          <a href="https://en.wikipedia.org/wiki/Khanqah-e-Moula" target="_blank"><i class="fa fa-wikipedia-w"></i>wikipedia</a><br>
+                                          <a href= "https://www.google.com/maps/place/Khanqah-e-Moula/@34.0914006,74.8078022,15z/data=!4m5!3m4!1s0x0:0xf55d6bbe4a3bb9bb!8m2!3d34.0914006!4d74.8078022" target="_blank"><i class="fa fa-map-marker"></i>Location</a><br>
+                                          <a href=""><i class="fa fa-inbox"></i>Temple</a><br>
+                                          <a href="/weatherpage4#jammu"><i class="fa fa-umbrella"></i>weather</a>
+                                      </div></div>
+
+                  </div>
+              </div>
+
+              <div class="col-md-3" style="height:70%;width:70%; margin:10px 10px 10px 10px;border-radius: 4px;box-shadow:0 0 1px 1px lightgrey;" >
+                <div class="row" style="padding: 10px 1px; border-radius:2px;">
+
+                            <div class="col-md-auto"  style=" width:auto; height:auto;">
+
+                                    <div class="bd-example" >
+                                          <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+
+                                              <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                  <img  src= "{{ url_for('static', filename='img/Pathar1.jpg') }}/" class="d-block w-100" alt="...">
+                                                  <div class="carousel-caption d-none d-md-block">
+                                                  </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                  <img src="{{ url_for('static', filename='img/Pathar2.jpg') }}/" class="d-block w-100" alt="...">
+
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="{{ url_for('static', filename='img/Pathar3.jpg') }}/" class="d-block w-100" alt="...">
+
+                                                  </div>
+                                              </div>
+
+                                          </div>
+                                        </div>
+
+                                        <div class="col-md-auto">
+                                          <h6 class="text-center">Pathar Mosque</h6>
+                                          <a href="https://en.wikipedia.org/wiki/Pathar_Mosque" target="_blank"><i class="fa fa-wikipedia-w"></i>wikipedia</a><br>
+                                          <a href= "https://www.google.com/maps/place/Pathar+Masjid/@34.0918929,74.8058019,15z/data=!4m5!3m4!1s0x0:0x54f450c3c3186183!8m2!3d34.0918929!4d74.8058019" target="_blank"><i class="fa fa-map-marker"></i>Location</a><br>
+                                          <a href=""><i class="fa fa-inbox"></i>Temple</a><br>
+                                          <a href="/weatherpage4#jammu"><i class="fa fa-umbrella"></i>weather</a>
+                                      </div></div>
+
+                  </div>
+              </div>
+
+              <div class="col-md-3" style="height:70%;width:70%; margin:10px 10px 10px 10px;border-radius: 4px;box-shadow:0 0 1px 1px lightgrey;" >
+                <div class="row" style="padding: 10px 1px; border-radius:2px;">
+
+                            <div class="col-md-auto"  style=" width:auto; height:auto;">
+
+                                    <div class="bd-example" >
+                                          <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+
+                                              <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                  <img  src= "https://www.adotrip.com/public/images/areas/master_images/5c6fd4dfe8d08-Pangong_Lake_Attractions.jpg" class="d-block w-100" alt="...">
+                                                  <div class="carousel-caption d-none d-md-block">
+                                                  </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                  <img src="https://www.untravel.com/media/website-images/new-content/india/pangong-tso/trans-himalayan-ladakh-safari---via-srinagar/banner.jpg" class="d-block w-100" alt="...">
+
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Jammu_kashmir_pangong_lake-1920x1080.jpg" class="d-block w-100" alt="...">
+
+                                                  </div>
+                                              </div>
+
+                                          </div>
+                                        </div>
+
+                                        <div class="col-md-auto">
+                                          <h6 class="text-center">Pangong Tso</h6>
+                                          <a href="https://en.wikipedia.org/wiki/Pangong_Tso" target="_blank"><i class="fa fa-wikipedia-w"></i>wikipedia</a><br>
+                                          <a href= "https://www.google.com/maps/place/Pangong+Tso/@33.8217523,78.4434007,10z/data=!3m1!4b1!4m5!3m4!1s0x39002d69b6082a97:0xb7ba17e3c8c016a9!8m2!3d33.7595131!4d78.6674404" target="_blank"><i class="fa fa-map-marker"></i>Location</a><br>
+                                          <a href=""><i class="fa fa-inbox"></i>Temple </a><br>
+                                          <a href="/weatherpage4#jammu"><i class="fa fa-umbrella"></i>weather</a>
+                                      </div></div>
+
+                  </div>
+              </div>
+        </div>
+
+
+        <div class="row" >
+            <div class="col-md-3" style="height:70%;width:70%; margin:10px 10px 10px 10px;border-radius: 4px;box-shadow:0 0 1px 1px lightgrey;" >
+                <div class="row" style="padding: 10px 1px; border-radius:2px;">
+
+                            <div class="col-md-auto"  style=" width:auto; height:auto;">
+
+                                    <div class="bd-example" >
+                                          <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+
+                                              <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                  <img  src= " {{ url_for('static', filename='img/Burzahom1.jpg') }}/" class="d-block w-100" alt="...">
+                                                  <div class="carousel-caption d-none d-md-block">
+                                                  </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                  <img src="{{ url_for('static', filename='img/Burzahom2.jpg') }}/" class="d-block w-100" alt="...">
+
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="{{ url_for('static', filename='img/Burzahom3.jpg') }}/" class="d-block w-100" alt="...">
+
+                                                  </div>
+                                              </div>
+
+                                          </div>
+                                        </div>
+
+                                        <div class="col-md-auto">
+                                          <h6 class="text-center">Burzahom site</h6>
+                                          <a href=" https://en.wikipedia.org/wiki/Burzahom_archaeological_site" target="_blank"><i class="fa fa-wikipedia-w"></i>wikipedia</a><br>
+                                          <a href= " https://www.google.com/maps/place/Burzahom+Archaeological+Site/@34.1692528,74.8669697,15z/data=!4m5!3m4!1s0x0:0x4f53af08bd281a63!8m2!3d34.1692528!4d74.8669697" target="_blank"><i class="fa fa-map-marker"></i>Location</a><br>
+                                          <a href=""><i class="fa fa-inbox"></i>archaeological site</a><br>
+                                          <a href="/weatherpage4#jammu"><i class="fa fa-umbrella"></i>weather</a>
+                                      </div></div>
+
+                  </div>
+              </div>
+
+
+        </div>
+
+
+
+
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+    </div>
+
+
+        <!-- Footer -->
+<section id="footer">
+		<div class="container">
+			<div class="row text-center text-xs-center text-sm-left text-md-left">
+				<div class="col-xs-12 col-sm-4 col-md-3">
+					<h5>Home page</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="/home"><i class="fa fa-angle-double-right"></i>Home</a></li>
+
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-3">
+					<h5>About Us</h5>
+					<ul class="list-unstyled quick-links">
+
+						<li><a href="/about"><i class="fa fa-angle-double-right"></i>About</a></li>
+
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-3">
+					<h5>Weather</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="/weather"><i class="fa fa-angle-double-right"></i>Weather</a></li>
+
+					</ul>
+                </div>
+                <div style="margin: auto;" class="col-xs-12 col-sm-4 col-md-3">
+					<h5>Application</h5>
+					<ul class="list-unstyled quick-links">
+                        <li><a href=""><img src="/static/img/googleplay.jpg" style="height:30.5px;width:103.25px;border-radius:10px;"></li>
+						<li><a href=""><i class="fa fa-angle-double-right"></i>Soon on play store</a></li>
+
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+
+					<ul class="list-unstyled text-center" style="display: flex; margin: auto;justify-content: space-between;width: 50%;">
+                                    <li ><a href="javascript:void();"><img src="{{ url_for('static', filename='img/twitter.png') }}/" height="30px" width="30px"></a></li>
+                                    <li ><a href="https://www.instagram.com/sail_at_india/" target="_blank"><img src="{{ url_for('static', filename='img/instagram.png') }}/" height="30px" width="30px"></i></a></li>
+						<li ><a href="mailto:sailatindia@gmail.com"><img src="{{ url_for('static', filename='img/search.png') }}/" height="30px" width="30px"></a></li>
+
+                              </ul>
+				</div>
+				</hr>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+					<p>This site was built by <u><a href=""><b>Mechanical</b></a></u> Students Of Karpagam College of Engineering . For further enquiry contact above links of us</p>
+					<p class="h6">&copy All right Reserved.<a class="text-green ml-2" >Team SAIL_INDIA</a></p>
+				</div>
+				</hr>
+			</div>
+		</div>
+	</section>
+    <!-- ./Footer -->
+  </body>
+  </html>

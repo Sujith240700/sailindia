@@ -1,0 +1,183 @@
+<html>
+    <head>
+        <title>S A I L _ I N D I A Weather Page-4</title>
+        <meta charset="utf-8">
+      <link rel="icon" href="{{ url_for('static', filename='img/logo.png') }}/" type="image/icon type">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}/">
+
+<style>
+        body{
+        background-color:black !important;
+
+    }
+    p{
+    color:white !important;
+}
+</style>
+</head>
+
+<body>
+
+    <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="/home"><img src="{{ url_for('static', filename='img/logo.png') }}/"></a>
+                    <button class="btn navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        &#9776;
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                      <ul class="navbar-nav ml-auto text-center">
+                        <li class="nav-item">
+                          <a class="nav-link" href="/home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link disabled" href="/weather">Weather</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href='/signup'>Sign-up</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="/about">About</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </nav>
+
+    </div>
+    <br>
+    <h3 style="margin-top:5px;" align="center">Weather Data Of All  Union territory</h3>
+    <table class="table setsize">
+        <tr><td id="ANDAMANANDNICOBARISLANDS"class="agstht">
+                <a class="weatherwidget-io" href="https://forecast7.com/en/11d7492d66/andaman-and-nicobar-islands/" data-label_1="ANDAMAN AND NICOBAR ISLANDS" data-label_2="WEATHER" data-font="Ubuntu" data-icons="Climacons Animated" data-days="3" data-theme="weather_one" >ANDAMAN AND NICOBAR ISLANDS WEATHER</a>
+                <script>
+                !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+                </script>
+        </td></tr>
+        <tr><td id="DADRAANDNAGARHAVELI" class="agstht">
+                <a class="weatherwidget-io" href="https://forecast7.com/en/20d1873d02/dadra-and-nagar-haveli/" data-label_1="DADRA AND NAGAR HAVELI" data-label_2="WEATHER" data-font="Ubuntu" data-icons="Climacons Animated" data-days="3" data-theme="weather_one" >DADRA AND NAGAR HAVELI WEATHER</a>
+                <script>
+                !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+                </script>
+        </td></tr>
+        <tr><td id="LAKSHADWEEP" class="agstht">
+                <a class="weatherwidget-io" href="https://forecast7.com/en/10d3372d78/lakshadweep/" data-label_1="LAKSHADWEEP" data-label_2="WEATHER" data-font="Ubuntu" data-icons="Climacons Animated" data-days="3" data-theme="weather_one" >LAKSHADWEEP WEATHER</a>
+                <script>
+                !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+                </script>
+        </td></tr>
+        <tr><td id="Puducherry" class="agstht">
+                <a class="weatherwidget-io" href="https://forecast7.com/en/11d9179d81/puducherry/" data-label_1="PUDUCHERRY" data-label_2="WEATHER" data-font="Ubuntu" data-icons="Climacons Animated" data-days="3" data-theme="weather_one" >PUDUCHERRY WEATHER</a>
+                <script>
+                !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+                </script>
+        </td></tr>
+        <tr><td id="CHANDIGARH" class="agstht">
+                <a class="weatherwidget-io" href="https://forecast7.com/en/30d7376d78/chandigarh/" data-label_1="CHANDIGARH" data-label_2="WEATHER" data-font="Ubuntu" data-icons="Climacons Animated" data-days="3" data-theme="weather_one" >CHANDIGARH WEATHER</a>
+                <script>
+                !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+                </script>
+        </td></tr>
+        <tr><td id="DAMANANDDIU" class="agstht">
+                <a class="weatherwidget-io" href="https://forecast7.com/en/20d4372d84/daman-and-diu/" data-label_1="DAMAN AND DIU" data-label_2="WEATHER" data-font="Ubuntu" data-icons="Climacons Animated" data-days="3" data-theme="weather_one" >DAMAN AND DIU WEATHER</a>
+                <script>
+                !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+                </script>
+        </td></tr>
+        <tr><td id="NEWDELHI" class="agstht">
+                <a class="weatherwidget-io" href="https://forecast7.com/en/28d6177d21/new-delhi/" data-label_1="NEW DELHI" data-label_2="WEATHER" data-font="Ubuntu" data-icons="Climacons Animated" data-days="3" data-theme="weather_one" >NEW DELHI WEATHER</a>
+                <script>
+                !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+                </script>
+        </td></tr>
+        <tr id="jammu"><td class="agstht">
+                <a class="weatherwidget-io" href="https://forecast7.com/en/33d7876d58/jammu-and-kashmir/" data-label_1="JAMMU AND KASHMIR" data-label_2="WEATHER" data-font="Ubuntu" data-icons="Climacons Animated" data-days="3" data-theme="weather_one" >JAMMU AND KASHMIR WEATHER</a>
+                <script>
+                !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+                </script>
+        </td></tr>
+        <tr id="ladakh"><td class="agstht">
+                <a class="weatherwidget-io" href="https://forecast7.com/en/33d2178d65/nyoma/" data-label_1="LADAKH" data-label_2="WEATHER" data-font="Ubuntu" data-icons="Climacons Animated" data-days="3" data-theme="weather_one" >LADAKH WEATHER</a>
+                <script>
+                !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+                </script>
+        </td></tr>
+
+    </table>
+    <div class="row text-center ">
+      <div class="col"><a  class="btn btn-outline-dark" href="/weather">1</a></div>
+      <div class="col"><a  class="btn btn-outline-dark" href="/weatherpage2">2</a></div>
+      <div class="col"><a  class="btn btn-outline-dark" href="/weatherpage3">3</a>
+      </div>
+      </div>
+    </div>
+
+
+
+
+          <!-- Footer -->
+<section id="footer">
+		<div class="container">
+			<div class="row text-center text-xs-center text-sm-left text-md-left">
+				<div class="col-xs-12 col-sm-4 col-md-3">
+					<h5>Home page</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="/home"><i class="fa fa-angle-double-right"></i>Home</a></li>
+
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-3">
+					<h5>About Us</h5>
+					<ul class="list-unstyled quick-links">
+
+						<li><a href="/about"><i class="fa fa-angle-double-right"></i>About</a></li>
+
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-3">
+					<h5>Weather</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="/weather"><i class="fa fa-angle-double-right"></i>Weather</a></li>
+
+					</ul>
+                </div>
+                <div style="margin: auto;" class="col-xs-12 col-sm-4 col-md-3">
+					<h5>Application</h5>
+					<ul class="list-unstyled quick-links">
+                        <li><a href=""><img src="/static/img/googleplay.jpg" style="height:30.5px;width:103.25px;border-radius:10px;"></li>
+						<li><a href=""><i class="fa fa-angle-double-right"></i>Soon on play store</a></li>
+
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+
+					<ul class="list-unstyled text-center" style="display: flex; margin: auto;justify-content: space-between;width: 50%;">
+                                    <li ><a href="javascript:void();"><img src="{{ url_for('static', filename='img/twitter.png') }}/" height="30px" width="30px"></a></li>
+                                    <li ><a href="https://www.instagram.com/sail_at_india/" target="_blank"><img src="{{ url_for('static', filename='img/instagram.png') }}/" height="30px" width="30px"></i></a></li>
+						<li ><a href="mailto:sailatindia@gmail.com"><img src="{{ url_for('static', filename='img/search.png') }}/" height="30px" width="30px"></a></li>
+
+                              </ul>
+				</div>
+				</hr>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+					<p>This site was built by <u><a href=""><b>Mechanical</b></a></u> Students Of Karpagam College of Engineering . For further enquiry contact above links of us</p>
+					<p class="h6">&copy All right Reserved.<a class="text-green ml-2" >Team SAIL_INDIA</a></p>
+				</div>
+				</hr>
+			</div>
+                </div>
+
+
+
+<br><br><br>
+<br><br><br>
+	</section>
+    <!-- ./Footer -->
+    </body>
+    </html>

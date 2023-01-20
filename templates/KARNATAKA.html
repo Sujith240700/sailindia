@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+        <head>
+            <title>SAIL - KARNATAKA</title>
+        <link rel="icon" href="{{ url_for('static', filename='img/logo.png') }}/" type="image/icon type">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}/">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <style>
+          .row{display:-ms-flexbox;display:flex;justify-content:center;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-right:-15px;}
+
+          </style>
+
+
+</head>
+<body>
+
+    <div id="wrapper">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="/home"><img src="{{ url_for('static', filename='img/logo.png') }}/"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      &#9776;
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                      <ul class="navbar-nav ml-auto text-center">
+                        <li class="nav-item">
+                          <a class="nav-link" href="/home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="/weather">Weather</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href='/signup'>Sign-up</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="/about">About</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </nav>
+
+    </div>
+
+    <div style="height:auto;width:90%;margin:auto;">
+        <h3 style="margin-left: 5%; margin-top:auto;">Karnataka</h3>
+        <p style="margin-left: 5%; margin-top:auto;">Karnataka (Karnāṭaka) is a state in the south western region of India. It was formed on 1 November 1956, with the passage of the States Reorganisation Act. Originally known as the State of Mysore, it was renamed Karnataka in 1973. The state corresponds to the Carnatic region. The capital and largest city is Bangalore. </p>
+        <hr style="margin-left: 5%; margin-top:auto;">
+        <p style="margin-left: 5%; margin-top:auto;">The two main river systems of the state are the Krishna and its tributaries, the Bhima, Ghataprabha, Vedavathi, Malaprabha and Tungabhadra in North Karnataka; Sharavathi in Shimoga and the Kaveri and its tributaries, the Hemavati, Shimsha, Arkavati, Lakshmana Thirtha and Kabini, in the south. Most of these rivers flow out of Karnataka eastward, reaching the sea at the Bay of Bengal. </p>
+      </div>
+
+
+
+      <div style="height: auto;width:90%;margin:auto;">
+        <h3 style="margin-left:5%;">Tourist Spots</h3>
+
+        <div class="row" >
+          <div class="col-md-3" style="height:70%;width:70%; margin:10px 10px 10px 10px;border-radius: 4px;box-shadow:0 0 1px 1px lightgrey;" >
+            <div class="row" style="padding: 10px 1px; border-radius:2px;">
+
+                        <div class="col-md-auto"  style=" width:auto; height:auto;">
+
+                                <div class="bd-example" >
+                                      <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+
+                                          <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                              <img  src= "https://expedasiaholidays.in/wp-content/uploads/2018/08/mysore-palace-1584546.jpg" class="d-block w-100" alt="...">
+                                              <div class="carousel-caption d-none d-md-block">
+                                              </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                              <img src="https://cdn1.goibibo.com/karnataka-mysore-149527326906o.jpg" class="d-block w-100" alt="...">
+
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="https://images3.alphacoders.com/562/thumb-1920-562051.jpg" class="d-block w-100" alt="...">
+
+                                              </div>
+                                          </div>
+
+                                      </div>
+                                    </div>
+
+                                    <div class="col-md-auto">
+                                      <h6 class="text-center">Mysore Palace</h6>
+                                      <a href="https://en.wikipedia.org/wiki/Mysore_Palace" target="_blank"><i class="fa fa-wikipedia-w"></i>wikipedia</a><br>
+                                      <a href= "https://www.google.co.in/maps/place/Mysore+Palace/@12.3051351,76.6551483,15z/data=!4m5!3m4!1s0x0:0xc37fbae2a124da0d!8m2!3d12.3051351!4d76.6551483" target="_blank"><i class="fa fa-map-marker"></i>Location</a><br>
+                                      <a href=""><i class="fa fa-inbox"></i>Palace</a><br>
+                                      <a href="/weatherpage2#karnataka"><i class="fa fa-umbrella"></i>weather</a>
+                                  </div></div>
+
+              </div>
+          </div>
+
+          <div class="col-md-3" style="height:70%;width:70%; margin:10px 10px 10px 10px;border-radius: 4px;box-shadow:0 0 1px 1px lightgrey;" >
+            <div class="row" style="padding: 10px 1px; border-radius:2px;">
+
+                        <div class="col-md-auto"  style=" width:auto; height:auto;">
+
+                                <div class="bd-example" >
+                                      <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+
+                                          <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                              <img  src= "http://media1.santabanta.com/full5/Hinduism/Temples/temples-32a.jpg" class="d-block w-100" alt="...">
+                                              <div class="carousel-caption d-none d-md-block">
+                                              </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                              <img src="https://res.klook.com/images/fl_lossy.progressive,q_65/c_fill,w_1920,h_1080,f_auto/w_80,x_15,y_15,g_south_west,l_klook_water/activities/vjqspoemulkqsapvjqqh/.jpg" class="d-block w-100" alt="...">
+
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="https://sujay1492.files.wordpress.com/2009/12/35.jpg" class="d-block w-100" alt="...">
+
+                                              </div>
+                                          </div>
+
+                                      </div>
+                                    </div>
+
+                                    <div class="col-md-auto">
+                                      <h6 class="text-center">Virupaksha Temple</h6>
+                                      <a href="https://en.wikipedia.org/wiki/Virupaksha_Temple,_Hampi" target="_blank"><i class="fa fa-wikipedia-w"></i>wikipedia</a><br>
+                                      <a href= "https://www.google.co.in/maps/place/Virupaksha+Temple/@15.3350669,76.4598953,15z/data=!4m2!3m1!1s0x0:0x419c571d90d6ea0d?sa=X&ved=2ahUKEwi7iJC_ma_lAhV54XMBHSBRA8QQ_BIwKHoECA0QCA" target="_blank"><i class="fa fa-map-marker"></i>Location</a><br>
+                                      <a href=""><i class="fa fa-inbox"></i>Temple</a><br>
+                                      <a href="/weatherpage4#karnataka"><i class="fa fa-umbrella"></i>weather</a>
+                                  </div></div>
+
+              </div>
+          </div>
+
+          <div class="col-md-3" style="height:70%;width:70%; margin:10px 10px 10px 10px;border-radius: 4px;box-shadow:0 0 1px 1px lightgrey;" >
+            <div class="row" style="padding: 10px 1px; border-radius:2px;">
+
+                        <div class="col-md-auto"  style=" width:auto; height:auto;">
+
+                                <div class="bd-example" >
+                                      <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+
+                                          <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                              <img  src= "https://www.adotrip.com/public/images/areas/master_images/5c6cf0cea445b-Lal_Bagh_Attractions.jpg" class="d-block w-100" alt="...">
+                                              <div class="carousel-caption d-none d-md-block">
+                                              </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                              <img src="https://www.adotrip.com/public/images/areas/5c6cf0cc81cc1-Lal%20Bagh%20Sight%20Seeing%20Tour.jpg" class="d-block w-100" alt="...">
+
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="https://www.adotrip.com/public/images/areas/5c6cf0cdeb95d-Lal%20Bagh%20Travel.jpg" class="d-block w-100" alt="...">
+
+                                              </div>
+                                          </div>
+
+                                      </div>
+                                    </div>
+
+                                    <div class="col-md-auto">
+                                      <h6 class="text-center">Lalbagh Garden</h6>
+                                      <a href="https://en.wikipedia.org/wiki/Lal_Bagh" target="_blank"><i class="fa fa-wikipedia-w"></i>wikipedia</a><br>
+                                      <a href= "https://www.google.co.in/maps/place/Lalbagh+Botanical+Garden/@12.9507432,77.5847773,15z/data=!4m5!3m4!1s0x0:0x8e110b99df2fbe22!8m2!3d12.9507432!4d77.5847773" target="_blank"><i class="fa fa-map-marker"></i>Location</a><br>
+                                      <a href=""><i class="fa fa-inbox"></i>Garden </a><br>
+                                      <a href="/weatherpage4#karnataka"><i class="fa fa-umbrella"></i>weather</a>
+                                  </div></div>
+
+              </div>
+          </div>
+        </div>
+
+
+        <div class="row" >
+            <div class="col-md-3" style="height:70%;width:70%; margin:10px 10px 10px 10px;border-radius: 4px;box-shadow:0 0 1px 1px lightgrey;" >
+                <div class="row" style="padding: 10px 1px; border-radius:2px;">
+
+                            <div class="col-md-auto"  style=" width:auto; height:auto;">
+
+                                    <div class="bd-example" >
+                                          <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+
+                                              <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                  <img  src= "https://image3.mouthshut.com/images/imagesp/925754092s.jpg" class="d-block w-100" alt="...">
+                                                  <div class="carousel-caption d-none d-md-block">
+                                                  </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                  <img src="https://media.cntraveller.in/wp-content/uploads/2019/08/Coorg-1.jpg" class="d-block w-100" alt="...">
+
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="https://image3.mouthshut.com/images/imagesp/925754092s.jpg" class="d-block w-100" alt="...">
+
+                                                  </div>
+                                              </div>
+
+                                          </div>
+                                        </div>
+
+                                        <div class="col-md-auto">
+                                          <h6 class="text-center">Abbey Falls</h6>
+                                          <a href="https://en.wikipedia.org/wiki/Abbey_Falls" target="_blank"><i class="fa fa-wikipedia-w"></i>wikipedia</a><br>
+                                          <a href= "https://www.google.co.in/maps/place/Abbey+Falls+Madikeri/@12.4580576,75.7166395,15z/data=!4m5!3m4!1s0x0:0x63626c39067b8931!8m2!3d12.4580576!4d75.7166395" target="_blank"><i class="fa fa-map-marker"></i>Location</a><br>
+                                          <a href=""><i class="fa fa-inbox"></i>Falls</a><br>
+                                          <a href="/weatherpage4#karnataka"><i class="fa fa-umbrella"></i>weather</a>
+                                      </div></div>
+
+                  </div>
+              </div>
+
+              <div class="col-md-3" style="height:70%;width:70%; margin:10px 10px 10px 10px;border-radius: 4px;box-shadow:0 0 1px 1px lightgrey;" >
+                <div class="row" style="padding: 10px 1px; border-radius:2px;">
+
+                            <div class="col-md-auto"  style=" width:auto; height:auto;">
+
+                                    <div class="bd-example" >
+                                          <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+
+                                              <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                  <img  src= "https://www.adotrip.com/public/images/areas/master_images/5c6cebce055a4-Cubbon_Park_Attractions.jpg" class="d-block w-100" alt="...">
+                                                  <div class="carousel-caption d-none d-md-block">
+                                                  </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                  <img src="https://www.adotrip.com/public/images/areas/5c6cebcb5048e-Cubbon%20Park%20Places%20to%20See.jpg" class="d-block w-100" alt="...">
+
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="https://www.adotrip.com/public/images/areas/5c6cebcba6d08-Cubbon%20Park%20Sight%20Seeing%20Tour.jpg" class="d-block w-100" alt="...">
+
+                                                  </div>
+                                              </div>
+
+                                          </div>
+                                        </div>
+
+                                        <div class="col-md-auto">
+                                          <h6 class="text-center">Cubbon Park</h6>
+                                          <a href="https://en.wikipedia.org/wiki/Cubbon_Park" target="_blank"><i class="fa fa-wikipedia-w"></i>wikipedia</a><br>
+                                          <a href= "https://www.google.co.in/maps/place/Cubbon+Park/@12.9763472,77.5929284,15z/data=!4m5!3m4!1s0x0:0xc62ca5a6e943dfb8!8m2!3d12.9763472!4d77.5929284" target="_blank"><i class="fa fa-map-marker"></i>Location</a><br>
+                                          <a href=""><i class="fa fa-inbox"></i>Park</a><br>
+                                          <a href="/weatherpage4#ladakh"><i class="fa fa-umbrella"></i>weather</a>
+                                      </div></div>
+
+                  </div>
+              </div>
+
+              <div class="col-md-3" style="height:70%;width:70%; margin:10px 10px 10px 10px;border-radius: 4px;box-shadow:0 0 1px 1px lightgrey;" >
+                <div class="row" style="padding: 10px 1px; border-radius:2px;">
+
+                            <div class="col-md-auto"  style=" width:auto; height:auto;">
+
+                                    <div class="bd-example" >
+                                          <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+
+                                              <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                  <img  src= "https://s3.ap-south-1.amazonaws.com/townscript-production/images/3dc127dd-bdfa-4347-b55e-d68db7156296.jpg" class="d-block w-100" alt="...">
+                                                  <div class="carousel-caption d-none d-md-block">
+                                                  </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                  <img src="https://pbs.twimg.com/media/DgrDDJtWkAAdBaH.jpg" class="d-block w-100" alt="...">
+
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="https://s3.ap-south-1.amazonaws.com/townscript-production/images/3dc127dd-bdfa-4347-b55e-d68db7156296.jpg" class="d-block w-100" alt="...">
+
+                                                  </div>
+                                              </div>
+
+                                        </div>
+
+                                        <div class="col-md-auto">
+                                          <h6 class="text-center">Jog Falls</h6>
+                                          <a href="https://en.wikipedia.org/wiki/Jog_Falls" target="_blank"><i class="fa fa-wikipedia-w"></i>wikipedia</a><br>
+                                          <a href= "https://www.google.co.in/maps/place/Jog+Falls/@14.2294389,74.8125229,15z/data=!4m5!3m4!1s0x0:0xb1a1dc2d7dfe13fb!8m2!3d14.2294389!4d74.8125229" target="_blank"><i class="fa fa-map-marker"></i>Location</a><br>
+                                          <a href=""><i class="fa fa-inbox"></i>Falls</a><br>
+                                          <a href="/weatherpage4#karnataka"><i class="fa fa-umbrella"></i>weather</a>
+                                      </div></div>
+
+                  </div>
+              </div>
+        </div>
+
+
+
+
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+    </div>
+
+        <!-- Footer -->
+<section id="footer">
+		<div class="container">
+			<div class="row text-center text-xs-center text-sm-left text-md-left">
+				<div class="col-xs-12 col-sm-4 col-md-3">
+					<h5>Home page</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="/home"><i class="fa fa-angle-double-right"></i>Home</a></li>
+
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-3">
+					<h5>About Us</h5>
+					<ul class="list-unstyled quick-links">
+
+						<li><a href="/about"><i class="fa fa-angle-double-right"></i>About</a></li>
+
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-3">
+					<h5>Weather</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="/weather"><i class="fa fa-angle-double-right"></i>Weather</a></li>
+
+					</ul>
+                </div>
+                <div style="margin: auto;" class="col-xs-12 col-sm-4 col-md-3">
+					<h5>Application</h5>
+					<ul class="list-unstyled quick-links">
+                        <li><a href=""><img src="/static/img/googleplay.jpg" style="height:30.5px;width:103.25px;border-radius:10px;"></li>
+						<li><a href=""><i class="fa fa-angle-double-right"></i>Soon on play store</a></li>
+
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+
+					<ul class="list-unstyled text-center" style="display: flex; margin: auto;justify-content: space-between;width: 50%;">
+                                    <li ><a href="javascript:void();"><img src="{{ url_for('static', filename='img/twitter.png') }}/" height="30px" width="30px"></a></li>
+                                    <li ><a href="https://www.instagram.com/sail_at_india/" target="_blank"><img src="{{ url_for('static', filename='img/instagram.png') }}/" height="30px" width="30px"></i></a></li>
+						<li ><a href="mailto:sailatindia@gmail.com"><img src="{{ url_for('static', filename='img/search.png') }}/" height="30px" width="30px"></a></li>
+
+                              </ul>
+				</div>
+				</hr>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+					<p>This site was built by <u><a href=""><b>Mechanical</b></a></u> Students Of Karpagam College of Engineering . For further enquiry contact above links of us</p>
+					<p class="h6">&copy All right Reserved.<a class="text-green ml-2" >Team SAIL_INDIA</a></p>
+				</div>
+				</hr>
+			</div>
+		</div>
+	</section>
+    <!-- ./Footer -->
+
+  </body>
+  </html>

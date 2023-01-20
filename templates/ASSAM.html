@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html>
+        <head>
+            <title>SAIL - ASSAM</title>
+        <link rel="icon" href="{{ url_for('static', filename='img/logo.png') }}/" type="image/icon type">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}/">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <style>
+          .row{display:-ms-flexbox;display:flex;justify-content:center;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-right:-15px;}
+
+          </style>
+
+
+</head>
+<body>
+
+    <div id="wrapper">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="/home"><img src="{{ url_for('static', filename='img/logo.png') }}/"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      &#9776;
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                      <ul class="navbar-nav ml-auto text-center">
+                        <li class="nav-item">
+                          <a class="nav-link" href="/home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="/weather">Weather</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href='/signup'>Sign-up</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="/about">About</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </nav>
+
+    </div>
+
+    <div style="height:auto;width:90%;margin:auto;">
+        <h3 style="margin-left: 5%; margin-top:auto;">ASSAM</h3>
+        <p style="margin-left: 5%; margin-top:auto;">Assam (/ˈɑːsɑːm/, Assamese: [ɔxɔm] ) is a state in northeastern India, situated south of the eastern Himalayas along the Brahmaputra and Barak River valleys. Assam covers an area of 78,438 km2 (30,285 sq mi). The state is bordered by Bhutan and Arunachal Pradesh to the north; Nagaland and Manipur to the east; Meghalaya, Tripura, Mizoram and Bangladesh to the south; and West Bengal to the west via the Siliguri Corridor, a 22 kilometres (14 mi) strip of land that connects the state to the rest of India. </p>
+        <hr style="margin-left: 5%; margin-top:auto;">
+        <p style="margin-left: 5%; margin-top:auto;">A major part of the state is claimed by both China and Taiwan, both referring to it as "South Tibet". During the 1962 Sino-Indian war, Chinese forces temporarily crossed the McMahon line, the border line between the state and China.</p>
+      </div>
+
+
+
+      <div style="height: auto;width:90%;margin:auto;">
+        <h3 style="margin-left:5%;">Tourist Spots</h3>
+
+        <div class="row" >
+          <div class="col-md-3" style="height:70%;width:70%; margin:10px 10px 10px 10px;border-radius: 4px;box-shadow:0 0 1px 1px lightgrey;" >
+            <div class="row" style="padding: 10px 1px; border-radius:2px;">
+
+                        <div class="col-md-auto"  style=" width:auto; height:auto;">
+
+                                <div class="bd-example" >
+                                      <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+
+                                          <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                              <img  src= "{{ url_for('static', filename='img/Kaziranga1.jpg') }}/" class="d-block w-100" alt="...">
+                                              <div class="carousel-caption d-none d-md-block">
+                                              </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                              <img src="{{ url_for('static', filename='img/Kaziranga2.jpg') }}/" class="d-block w-100" alt="...">
+
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="{{ url_for('static', filename='img/Kaziranga3.jpg') }}/" class="d-block w-100" alt="...">
+
+                                              </div>
+                                          </div>
+
+                                      </div>
+                                    </div>
+
+                                    <div class="col-md-auto">
+                                      <h6 class="text-center">Kaziranga Park</h6>
+                                      <a href="https://en.wikipedia.org/wiki/Kaziranga_National_Park" target="_blank"><i class="fa fa-wikipedia-w"></i>wikipedia</a><br>
+                                      <a href= "https://www.google.com/maps/place/Kaziranga+National+Park/@26.577531,93.171122,14z/data=!4m5!3m4!1s0x0:0x8b2b74b6e7c99458!8m2!3d26.577531!4d93.171122" target="_blank"><i class="fa fa-map-marker"></i>Location</a><br>
+                                      <a href=""><i class="fa fa-inbox"></i>National Park</a><br>
+                                      <a href="/weather#ASSAM"><i class="fa fa-umbrella"></i>weather</a>
+                                  </div></div>
+
+              </div>
+          </div>
+
+          <div class="col-md-3" style="height:70%;width:70%; margin:10px 10px 10px 10px;border-radius: 4px;box-shadow:0 0 1px 1px lightgrey;" >
+            <div class="row" style="padding: 10px 1px; border-radius:2px;">
+
+                        <div class="col-md-auto"  style=" width:auto; height:auto;">
+
+                                <div class="bd-example" >
+                                      <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+
+                                          <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                              <img  src= "{{ url_for('static', filename='img/Kamakhya1.jpg') }}/" class="d-block w-100" alt="...">
+                                              <div class="carousel-caption d-none d-md-block">
+                                              </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                              <img src="{{ url_for('static', filename='img/Kamakhya2.jpg') }}/" class="d-block w-100" alt="...">
+
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="{{ url_for('static', filename='img/Kamakhya3.jpg') }}/" class="d-block w-100" alt="...">
+
+                                              </div>
+                                          </div>
+
+                                      </div>
+                                    </div>
+
+                                    <div class="col-md-auto">
+                                      <h6 class="text-center">Kamakhya Temple</h6>
+                                      <a href="https://en.wikipedia.org/wiki/Kamakhya_Temple" target="_blank"><i class="fa fa-wikipedia-w"></i>wikipedia</a><br>
+                                      <a href= "https://www.google.com/maps/place/Kamakhya+Temple/@26.1664139,91.7051512,15z/data=!4m5!3m4!1s0x0:0xaaad40304c7d3d1d!8m2!3d26.1664139!4d91.7051512" target="_blank"><i class="fa fa-map-marker"></i>Location</a><br>
+                                      <a href=""><i class="fa fa-inbox"></i>Temple</a><br>
+                                      <a href="/weather#ASSAM"><i class="fa fa-umbrella"></i>weather</a>
+                                  </div></div>
+
+              </div>
+          </div>
+
+          <div class="col-md-3" style="height:70%;width:70%; margin:10px 10px 10px 10px;border-radius: 4px;box-shadow:0 0 1px 1px lightgrey;" >
+            <div class="row" style="padding: 10px 1px; border-radius:2px;">
+
+                        <div class="col-md-auto"  style=" width:auto; height:auto;">
+
+                                <div class="bd-example" >
+                                      <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+
+                                          <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                              <img  src= "{{ url_for('static', filename='img/Pobitora1.jpg') }}/" class="d-block w-100" alt="...">
+                                              <div class="carousel-caption d-none d-md-block">
+                                              </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                              <img src="{{ url_for('static', filename='img/Pobitora2.jpg') }}/" class="d-block w-100" alt="...">
+
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="{{ url_for('static', filename='img/Pobitora3.jpg') }}/" class="d-block w-100" alt="...">
+
+                                              </div>
+                                          </div>
+
+                                      </div>
+                                    </div>
+
+                                    <div class="col-md-auto">
+                                      <h6 class="text-center">Pobitora Sanctuary</h6>
+                                      <a href="https://en.wikipedia.org/wiki/Pobitora_Wildlife_Sanctuary" target="_blank"><i class="fa fa-wikipedia-w"></i>wikipedia</a><br>
+                                      <a href= "https://www.google.com/maps/place/Pobitora+Wildlife+Sanctuary/@26.2308374,92.0511926,15z/data=!4m5!3m4!1s0x0:0x28e75b72832449db!8m2!3d26.2308374!4d92.0511926" target="_blank"><i class="fa fa-map-marker"></i>Location</a><br>
+                                      <a href=""><i class="fa fa-inbox"></i>Wildlife Sanctuary</a><br>
+                                      <a href="/weather#ASSAM"><i class="fa fa-umbrella"></i>weather</a>
+                                  </div></div>
+
+              </div>
+          </div>
+        </div>
+
+
+        <div class="row" >
+            <div class="col-md-3" style="height:70%;width:70%; margin:10px 10px 10px 10px;border-radius: 4px;box-shadow:0 0 1px 1px lightgrey;" >
+                <div class="row" style="padding: 10px 1px; border-radius:2px;">
+
+                            <div class="col-md-auto"  style=" width:auto; height:auto;">
+
+                                    <div class="bd-example" >
+                                          <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+
+                                              <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                  <img  src= "{{ url_for('static', filename='img/Dibru1.jpg') }}/" class="d-block w-100" alt="...">
+                                                  <div class="carousel-caption d-none d-md-block">
+                                                  </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                  <img src="{{ url_for('static', filename='img/Dibru2.jpg') }}/" class="d-block w-100" alt="...">
+
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="{{ url_for('static', filename='img/Dibru3.jpg') }}/" class="d-block w-100" alt="...">
+
+                                                  </div>
+                                              </div>
+
+                                          </div>
+                                        </div>
+
+                                        <div class="col-md-auto">
+                                          <h6 class="text-center">Dibru Saikhowa</h6>
+                                          <a href="https://en.wikipedia.org/wiki/Dibru-Saikhowa_National_Park" target="_blank"><i class="fa fa-wikipedia-w"></i>wikipedia</a><br>
+                                          <a href= "https://www.google.com/maps/place/Dibru+Saikhowa+National+Park/@27.6690334,95.3625516,15z/data=!4m5!3m4!1s0x0:0x8837c490abd190d!8m2!3d27.6690334!4d95.3625516" target="_blank"><i class="fa fa-map-marker"></i>Location</a><br>
+                                          <a href=""><i class="fa fa-inbox"></i>National Park</a><br>
+                                          <a href="/weather#ASSAM"><i class="fa fa-umbrella"></i>weather</a>
+                                      </div></div>
+
+                  </div>
+              </div>
+
+              <div class="col-md-3" style="height:70%;width:70%; margin:10px 10px 10px 10px;border-radius: 4px;box-shadow:0 0 1px 1px lightgrey;" >
+                <div class="row" style="padding: 10px 1px; border-radius:2px;">
+
+                            <div class="col-md-auto"  style=" width:auto; height:auto;">
+
+                                    <div class="bd-example" >
+                                          <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+
+                                              <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                  <img  src= " {{ url_for('static', filename='img/Umananda1.jpg') }}/  " class="d-block w-100" alt="...">
+                                                  <div class="carousel-caption d-none d-md-block">
+                                                  </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                  <img src="{{ url_for('static', filename='img/Umananda2.jpg') }}/ " class="d-block w-100" alt="...">
+
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="{{ url_for('static', filename='img/Umananda3.jpg') }}/" class="d-block w-100" alt="...">
+
+                                                  </div>
+                                              </div>
+
+                                          </div>
+                                        </div>
+
+                                        <div class="col-md-auto">
+                                          <h6 class="text-center">Umananda Temple</h6>
+                                          <a href="https://en.wikipedia.org/wiki/Umananda_Temple" target="_blank"><i class="fa fa-wikipedia-w"></i>wikipedia</a><br>
+                                          <a href= "https://www.google.com/maps/place/Umananda+Temple/@26.1964615,91.7448249,15z/data=!4m5!3m4!1s0x0:0xe9f66407624adc3f!8m2!3d26.1964615!4d91.7448249" target="_blank"><i class="fa fa-map-marker"></i>Location</a><br>
+                                          <a href=""><i class="fa fa-inbox"></i>Temple</a><br>
+                                          <a href="/weather#ASSAM"><i class="fa fa-umbrella"></i>weather</a>
+                                      </div></div>
+
+                  </div>
+              </div>
+
+
+              <div class="col-md-3" style="height:70%;width:70%; margin:10px 10px 10px 10px;border-radius: 4px;box-shadow:0 0 1px 1px lightgrey;" >
+                <div class="row" style="padding: 10px 1px; border-radius:2px;">
+
+                            <div class="col-md-auto"  style=" width:auto; height:auto;">
+
+                                    <div class="bd-example" >
+                                          <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+
+                                              <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                  <img  src= "{{ url_for('static', filename='img/AssamState1.jpg') }}/" class="d-block w-100" alt="...">
+                                                  <div class="carousel-caption d-none d-md-block">
+                                                  </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                  <img src="{{ url_for('static', filename='img/AssamState2.jpg') }}/" class="d-block w-100" alt="...">
+
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="{{ url_for('static', filename='img/AssamState3.jpg') }}/" class="d-block w-100" alt="...">
+
+                                                  </div>
+                                              </div>
+
+                                          </div>
+                                        </div>
+
+                                        <div class="col-md-auto">
+                                          <h6 class="text-center">Assam State</h6>
+                                          <a href="https://en.wikipedia.org/wiki/Namsai,_Arunachal_Pradesh" target="_blank"><i class="fa fa-wikipedia-w"></i>wikipedia</a><br>
+                                          <a href= "https://www.google.com/maps/place/Namsai,+Arunachal+Pradesh+792103/@27.6697643,95.8452092,14z/data=!3m1!4b1!4m5!3m4!1s0x373efa531ad72fb7:0xd89ede1179664cca!8m2!3d27.6692115!4d95.8644018" target="_blank"><i class="fa fa-map-marker"></i>Location</a><br>
+                                          <a href=""><i class="fa fa-inbox"></i>Zoo Botanical Garden</a><br>
+                                          <a href="/weather#ASSAM"><i class="fa fa-umbrella"></i>weather</a>
+                                      </div></div>
+
+                  </div>
+              </div>
+
+
+        </div>
+
+
+
+        <div class="row" >
+          <div class="col-md-3" style="height:70%;width:70%; margin:10px 10px 10px 10px;border-radius: 4px;box-shadow:0 0 1px 1px lightgrey;" >
+              <div class="row" style="padding: 10px 1px; border-radius:2px;">
+
+                          <div class="col-md-auto"  style=" width:auto; height:auto;">
+
+                                  <div class="bd-example" >
+                                        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+
+                                            <div class="carousel-inner">
+                                              <div class="carousel-item active">
+                                                <img  src= "{{ url_for('static', filename='img/AssamStateMuseum1.jpg') }}/" class="d-block w-100" alt="...">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                </div>
+                                              </div>
+                                              <div class="carousel-item">
+                                                <img src="{{ url_for('static', filename='img/AssamStateMuseum2.jpg') }}/" class="d-block w-100" alt="...">
+
+                                              </div>
+                                              <div class="carousel-item">
+                                                  <img src="{{ url_for('static', filename='img/AssamStateMuseum3.jpg') }}/" class="d-block w-100" alt="...">
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                      </div>
+
+                                      <div class="col-md-auto">
+                                        <h6 class="text-center">Assam State Museum</h6>
+                                        <a href="https://en.wikipedia.org/wiki/Assam_State_Museum" target="_blank"><i class="fa fa-wikipedia-w"></i>wikipedia</a><br>
+                                        <a href= "https://www.google.com/maps/place/Assam+State+Museum/@26.1853352,91.7519043,15z/data=!4m5!3m4!1s0x0:0xe07929f42278107f!8m2!3d26.1853352!4d91.7519043" target="_blank"><i class="fa fa-map-marker"></i>Location</a><br>
+                                        <a href=""><i class="fa fa-inbox"></i>Museum</a><br>
+                                        <a href="/weather#ASSAM"><i class="fa fa-umbrella"></i>weather</a>
+                                    </div></div>
+
+                </div>
+            </div>
+
+            <div class="col-md-3" style="height:70%;width:70%; margin:10px 10px 10px 10px;border-radius: 4px;box-shadow:0 0 1px 1px lightgrey;" >
+              <div class="row" style="padding: 10px 1px; border-radius:2px;">
+
+                          <div class="col-md-auto"  style=" width:auto; height:auto;">
+
+                                  <div class="bd-example" >
+                                        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+
+                                            <div class="carousel-inner">
+                                              <div class="carousel-item active">
+                                                <img  src= " {{ url_for('static', filename='img/Orang1.jpg') }}/  " class="d-block w-100" alt="...">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                </div>
+                                              </div>
+                                              <div class="carousel-item">
+                                                <img src="{{ url_for('static', filename='img/Orang2.jpg') }}/ " class="d-block w-100" alt="...">
+
+                                              </div>
+                                              <div class="carousel-item">
+                                                  <img src="{{ url_for('static', filename='img/Orang3.jpg') }}/" class="d-block w-100" alt="...">
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                      </div>
+
+                                      <div class="col-md-auto">
+                                        <h6 class="text-center">Orang National Park</h6>
+                                        <a href="https://en.wikipedia.org/wiki/Orang_National_Park" target="_blank"><i class="fa fa-wikipedia-w"></i>wikipedia</a><br>
+                                        <a href= "https://www.google.com/maps/place/Orang+National+Park/@26.5568148,92.3279016,15z/data=!4m5!3m4!1s0x0:0xedd1ebb5084b23d1!8m2!3d26.5568148!4d92.3279016" target="_blank"><i class="fa fa-map-marker"></i>Location</a><br>
+                                        <a href=""><i class="fa fa-inbox"></i>National Park</a><br>
+                                        <a href="/weather#ASSAM"><i class="fa fa-umbrella"></i>weather</a>
+                                    </div></div>
+
+                </div>
+            </div>
+
+
+            <div class="col-md-3" style="height:70%;width:70%; margin:10px 10px 10px 10px;border-radius: 4px;box-shadow:0 0 1px 1px lightgrey;" >
+              <div class="row" style="padding: 10px 1px; border-radius:2px;">
+
+                          <div class="col-md-auto"  style=" width:auto; height:auto;">
+
+                                  <div class="bd-example" >
+                                        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+
+                                            <div class="carousel-inner">
+                                              <div class="carousel-item active">
+                                                <img  src= "{{ url_for('static', filename='img/AssamState1.jpg') }}/" class="d-block w-100" alt="...">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                </div>
+                                              </div>
+                                              <div class="carousel-item">
+                                                <img src="{{ url_for('static', filename='img/AssamState2.jpg') }}/" class="d-block w-100" alt="...">
+
+                                              </div>
+                                              <div class="carousel-item">
+                                                  <img src="{{ url_for('static', filename='img/AssamState3.jpg') }}/" class="d-block w-100" alt="...">
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                      </div>
+
+                                      <div class="col-md-auto">
+                                        <h6 class="text-center">Umananda Island</h6>
+                                        <a href="https://en.wikipedia.org/wiki/Umananda_Island" target="_blank"><i class="fa fa-wikipedia-w"></i>wikipedia</a><br>
+                                        <a href= "https://www.google.com/maps/place/Peacock+Island/@26.1964627,91.7428217,17z/data=!3m1!4b1!4m5!3m4!1s0x375a5a18099b9839:0xbd808099fd834c8e!8m2!3d26.1964922!4d91.7449079" target="_blank"><i class="fa fa-map-marker"></i>Location</a><br>
+                                        <a href=""><i class="fa fa-inbox"></i>Island</a><br>
+                                        <a href="/weather#ASSAM"><i class="fa fa-umbrella"></i>weather</a>
+                                    </div></div>
+
+                </div>
+            </div>
+
+
+      </div>
+
+
+
+
+
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+    </div>
+      <!-- Footer -->
+<section id="footer">
+		<div class="container">
+			<div class="row text-center text-xs-center text-sm-left text-md-left">
+				<div class="col-xs-12 col-sm-4 col-md-3">
+					<h5>Home page</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="/home"><i class="fa fa-angle-double-right"></i>Home</a></li>
+
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-3">
+					<h5>About Us</h5>
+					<ul class="list-unstyled quick-links">
+
+						<li><a href="/about"><i class="fa fa-angle-double-right"></i>About</a></li>
+
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-3">
+					<h5>Weather</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="/weather"><i class="fa fa-angle-double-right"></i>Weather</a></li>
+
+					</ul>
+                </div>
+                <div style="margin: auto;" class="col-xs-12 col-sm-4 col-md-3">
+					<h5>Application</h5>
+					<ul class="list-unstyled quick-links">
+                        <li><a href=""><img src="/static/img/googleplay.jpg" style="height:30.5px;width:103.25px;border-radius:10px;"></li>
+						<li><a href=""><i class="fa fa-angle-double-right"></i>Soon on play store</a></li>
+
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+
+					<ul class="list-unstyled text-center" style="display: flex; margin: auto;justify-content: space-between;width: 50%;">
+                                    <li ><a href="javascript:void();"><img src="{{ url_for('static', filename='img/twitter.png') }}/" height="30px" width="30px"></a></li>
+                                    <li ><a href="https://www.instagram.com/sail_at_india/" target="_blank"><img src="{{ url_for('static', filename='img/instagram.png') }}/" height="30px" width="30px"></i></a></li>
+						<li ><a href="mailto:sailatindia@gmail.com"><img src="{{ url_for('static', filename='img/search.png') }}/" height="30px" width="30px"></a></li>
+
+                              </ul>
+				</div>
+				</hr>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+					<p>This site was built by <u><a href=""><b>Mechanical</b></a></u> Students Of Karpagam College of Engineering . For further enquiry contact above links of us</p>
+					<p class="h6">&copy All right Reserved.<a class="text-green ml-2" >Team SAIL_INDIA</a></p>
+				</div>
+				</hr>
+			</div>
+		</div>
+	</section>
+    <!-- ./Footer -->
+
+
+  </body>
+  </html>

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+        <head>
+            <title>SAIL - UTTARPRADESH</title>
+        <link rel="icon" href="{{ url_for('static', filename='img/logo.png') }}/" type="image/icon type">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}/">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <style>
+          .row{display:-ms-flexbox;display:flex;justify-content:center;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-right:-15px;}
+    body{
+        background-color:black !important;
+
+    }
+    p{
+    color:white !important;
+}
+          </style>
+
+
+</head>
+<body class="stb">
+
+    <div id="wrapper">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="/home"><img src="{{ url_for('static', filename='img/logo.png') }}/"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      &#9776;
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                      <ul class="navbar-nav ml-auto text-center">
+                        <li class="nav-item">
+                          <a class="nav-link" href="/home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="/weather">Weather</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href='/signup'>Sign-up</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="/about">About</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </nav>
+
+    </div>
+
+    <div style="height:auto;width:90%;margin:auto;">
+        <h3 style="margin-left: 5%; margin-top:auto;">UTTARPRADESH</h3>
+        <p style="margin-left: 5%; margin-top:auto;">Uttar Pradesh (/ˌʊtər prəˈdɛʃ/; IAST: Uttar Pradeś [ˈʊtːəɾ pɾəˈdeːʃ]) is a state in northern India. With roughly 200 million inhabitants, it is the most populous state in India as well as the most populous country subdivision in the world.[18] It was created on 1 April 1937 as the United Provinces of Agra and Oudh during British rule, and was renamed Uttar Pradesh in 1950. The state is divided into 18 divisions and 75 districts with the capital being Lucknow. The main ethnic group is the Hindavi people, forming the demographic plurality. On 9 November 2000, a new state, Uttarakhand, was carved out from the state's Himalayan hill region. The two major rivers of the state, the Ganga and Yamuna, join at Allahabad (Prayagraj) and then flow as the Ganga further east. Hindi is the most widely spoken language and is also the official language of the state, along with Urdu. </p>
+        <hr style="margin-left: 5%; margin-top:auto;">
+        <p style="margin-left: 5%; margin-top:auto;">The state is bordered by Rajasthan to the west, Haryana, Himachal Pradesh and Delhi to the northwest, Uttarakhand and Nepal to the north, Bihar to the east, Madhya Pradesh to the south, and touches the states of Jharkhand and Chhattisgarh to the southeast. It covers 243,290 square kilometres (93,933 sq mi), equal to 7.34% of the total area of India, and is the fourth-largest Indian state by area. Agriculture and service industries are the largest parts of the state's economy.</p>
+      </div>
+
+
+
+      <div style="height: auto;width:90%;margin:auto;">
+        <h3 style="margin-left:5%;">Tourist Spots</h3>
+
+        <div class="row" >
+          <div class="col-md-3" style="height:70%;width:70%; margin:10px 10px 10px 10px;border-radius: 4px;box-shadow:0 0 1px 1px lightgrey;" >
+            <div class="row" style="padding: 10px 1px; border-radius:2px;">
+
+                        <div class="col-md-auto"  style=" width:auto; height:auto;">
+
+                                <div class="bd-example" >
+                                      <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+
+                                          <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                              <img  src= "https://www.smartertravel.com/uploads/2019/07/taj-mahal.jpg " class="d-block w-100" alt="...">
+                                              <div class="carousel-caption d-none d-md-block">
+                                              </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                              <img src="https://media.architecturaldigest.in/wp-content/uploads/2018/01/6211.jpg" class="d-block w-100" alt="...">
+
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="https://i.pinimg.com/originals/d2/29/71/d22971243b3e2ed74bf69d354781e04f.jpg" class="d-block w-100" alt="...">
+
+                                              </div>
+                                          </div>
+
+                                      </div>
+                                    </div>
+
+                                    <div class="col-md-auto">
+                                      <h6 class="text-center">Taj Mahal</h6>
+                                      <a href="https://en.wikipedia.org/wiki/Taj_Mahal" target="_blank"><i class="fa fa-wikipedia-w"></i>wikipedia</a><br>
+                                      <a href= "https://www.google.com/maps/place/Taj+Mahal/@27.1751448,78.0421422,15z/data=!4m2!3m1!1s0x0:0xdd2ae4803f767dde?sa=X&ved=2ahUKEwiI3MK2t7flAhVBU30KHahCCXYQ_BIwIHoECAwQCA" target="_blank"><i class="fa fa-map-marker"></i>Location</a><br>
+                                      <a href=""><i class="fa fa-inbox"></i>Memoral</a><br>
+                                      <a href="/weatherpage3#UTTARPRADESH"><i class="fa fa-umbrella"></i>weather</a>
+                                  </div></div>
+
+              </div>
+          </div>
+
+          <div class="col-md-3" style="height:70%;width:70%; margin:10px 10px 10px 10px;border-radius: 4px;box-shadow:0 0 1px 1px lightgrey;" >
+            <div class="row" style="padding: 10px 1px; border-radius:2px;">
+
+                        <div class="col-md-auto"  style=" width:auto; height:auto;">
+
+                                <div class="bd-example" >
+                                      <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+
+                                          <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                              <img  src= "https://d6qyz3em3b312.cloudfront.net/upload/images/media/2017/02/09/shutterstock_163061444.1920x1080.jpg" class="d-block w-100" alt="...">
+                                              <div class="carousel-caption d-none d-md-block">
+                                              </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                              <img src="https://i.pinimg.com/originals/1d/c5/e9/1dc5e957cd26afea81dce8e2f18cb3cc.jpg" class="d-block w-100" alt="...">
+
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="https://images5.alphacoders.com/561/561693.jpg" class="d-block w-100" alt="...">
+
+                                              </div>
+                                          </div>
+
+                                      </div>
+                                    </div>
+
+                                    <div class="col-md-auto">
+                                      <h6 class="text-center">Agra Fort</h6>
+                                      <a href="https://en.wikipedia.org/wiki/Agra_Fort" target="_blank"><i class="fa fa-wikipedia-w"></i>wikipedia</a><br>
+                                      <a href= "https://www.google.com/maps/place/Agra+Fort/@27.1795328,78.021112,15z/data=!4m2!3m1!1s0x0:0x640a5ccc94029576?sa=X&ved=2ahUKEwiwnKO5t7flAhXIb30KHTLyBiYQ_BIwHnoECAoQCA" target="_blank"><i class="fa fa-map-marker"></i>Location</a><br>
+                                      <a href=""><i class="fa fa-inbox"></i>Memoral</a><br>
+                                      <a href="/weatherpage3#UTTARPRADESH"><i class="fa fa-umbrella"></i>weather</a>
+                                  </div></div>
+
+              </div>
+          </div>
+
+          <div class="col-md-3" style="height:70%;width:70%; margin:10px 10px 10px 10px;border-radius: 4px;box-shadow:0 0 1px 1px lightgrey;" >
+            <div class="row" style="padding: 10px 1px; border-radius:2px;">
+
+                        <div class="col-md-auto"  style=" width:auto; height:auto;">
+
+                                <div class="bd-example" >
+                                      <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+
+                                          <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                              <img  src= "https://upload.wikimedia.org/wikipedia/commons/f/f7/Itmad_ud_daulla_agra.JPG" class="d-block w-100" alt="...">
+                                              <div class="carousel-caption d-none d-md-block">
+                                              </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                              <img src="https://bento.cdn.pbs.org/hostedbento-prod/filer_public/civilizations/Galleries/Episode%205%20Gallery/DSC00247.jpg" class="d-block w-100" alt="...">
+
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/Np7yaOOPl/agra-india-circa-may-2014-view-of-itmad-ud-daulah-also-known-as-baby-taj-mahal_ndsuucdig__F0000.png" class="d-block w-100" alt="...">
+
+                                              </div>
+                                          </div>
+
+                                      </div>
+                                    </div>
+
+                                    <div class="col-md-auto">
+                                      <h6 class="text-center">Itmad-ud-Daula</h6>
+                                      <a href="https://en.wikipedia.org/wiki/Tomb_of_I%27tim%C4%81d-ud-Daulah" target="_blank"><i class="fa fa-wikipedia-w"></i>wikipedia</a><br>
+                                      <a href= "https://www.google.com/maps/place/Itmad-ud-Daula/@27.1928873,78.0309808,15z/data=!4m2!3m1!1s0x0:0x13f63c6b9f4ac458?sa=X&ved=2ahUKEwi15_bVt7flAhUHXSsKHXEHAioQ_BIwHnoECAwQCA" target="_blank"><i class="fa fa-map-marker"></i>Location</a><br>
+                                      <a href=""><i class="fa fa-inbox"></i>Memoral</a><br>
+                                      <a href="/weatherpage3#UTTARPRADESH"><i class="fa fa-umbrella"></i>weather</a>
+                                  </div></div>
+
+              </div>
+          </div>
+        </div>
+
+
+
+
+
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+    </div>
+
+        <!-- Footer -->
+<section id="footer">
+		<div class="container">
+			<div class="row text-center text-xs-center text-sm-left text-md-left">
+				<div class="col-xs-12 col-sm-4 col-md-3">
+					<h5>Home page</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="/home"><i class="fa fa-angle-double-right"></i>Home</a></li>
+
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-3">
+					<h5>About Us</h5>
+					<ul class="list-unstyled quick-links">
+
+						<li><a href="/about"><i class="fa fa-angle-double-right"></i>About</a></li>
+
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-3">
+					<h5>Weather</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="/weather"><i class="fa fa-angle-double-right"></i>Weather</a></li>
+
+					</ul>
+                </div>
+                <div style="margin: auto;" class="col-xs-12 col-sm-4 col-md-3">
+					<h5>Application</h5>
+					<ul class="list-unstyled quick-links">
+                        <li><a href=""><img src="/static/img/googleplay.jpg" style="height:30.5px;width:103.25px;border-radius:10px;"></li>
+						<li><a href=""><i class="fa fa-angle-double-right"></i>Soon on play store</a></li>
+
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+
+					<ul class="list-unstyled text-center" style="display: flex; margin: auto;justify-content: space-between;width: 50%;">
+                                    <li ><a href="javascript:void();"><img src="{{ url_for('static', filename='img/twitter.png') }}/" height="30px" width="30px"></a></li>
+                                    <li ><a href="https://www.instagram.com/sail_at_india/" target="_blank"><img src="{{ url_for('static', filename='img/instagram.png') }}/" height="30px" width="30px"></i></a></li>
+						<li ><a href="mailto:sailatindia@gmail.com"><img src="{{ url_for('static', filename='img/search.png') }}/" height="30px" width="30px"></a></li>
+
+                              </ul>
+				</div>
+				</hr>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+					<p>This site was built by <u><a href=""><b>Mechanical</b></a></u> Students Of Karpagam College of Engineering . For further enquiry contact above links of us</p>
+					<p class="h6">&copy All right Reserved.<a class="text-green ml-2" >Team SAIL_INDIA</a></p>
+				</div>
+				</hr>
+			</div>
+		</div>
+	</section>
+    <!-- ./Footer -->
+
+  </body>
+  </html>

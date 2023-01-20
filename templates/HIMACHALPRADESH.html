@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+        <head>
+            <title>SAIL - HIMACHAL PRADESH</title>
+        <link rel="icon" href="{{ url_for('static', filename='img/logo.png') }}/" type="image/icon type">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}/">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <style>
+          .row{display:-ms-flexbox;display:flex;justify-content:center;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-right:-15px;}
+
+          </style>
+
+
+</head>
+<body class="stb">
+
+    <div id="wrapper">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="/home"><img src="{{ url_for('static', filename='img/logo.png') }}/"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      &#9776;
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                      <ul class="navbar-nav ml-auto text-center">
+                        <li class="nav-item">
+                          <a class="nav-link" href="/home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="/weather">Weather</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href='/signup'>Sign-up</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="/about">About</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </nav>
+
+    </div>
+
+    <div style="height:auto;width:90%;margin:auto;">
+      <h3 style="margin-left: 5%; margin-top:auto;">HIMACHAL PRADESH</h3>
+      <p style="margin-left: 5%; margin-top:auto;">Himachal Pradesh (Hindi: [ɦɪˈmaːtʃəl pɾəˈdeːʃ] (About this soundlisten); lit. "snow-laden province") is a state in the northern part of India. Situated in the Western Himalayas, it is bordered by union territory of Jammu and Kashmir on the north, Punjab on the west, Haryana on the southwest, Uttarakhand on the southeast, and Tibet on the east. At its southernmost point, it also touches the state of Uttar Pradesh. The state's name was coined by acharya Diwakar Dutt Sharma, one of the state's eminent Sanskrit scholars.</p>
+      <hr style="margin-left: 5%; margin-top:auto;">
+      <p style="margin-left: 5%; margin-top:auto;">The predominantly mountainous region comprising the present day Himachal Pradesh has been inhabited since pre-historic times having witnessed multiple waves of human migration from other areas.Through its history, the region was mostly ruled by local kingdoms some of which accepted suzerainty of larger empires. Prior to India's independence from the British, Himachal comprised the hilly regions of Punjab Province of British India. After independence, many of the hilly territories were organized as the Chief Commissioner's province of Himachal Pradesh which later became a union territory. In 1966, hilly areas of neighboring Punjab state were merged into Himachal and it was ultimately granted full statehood in 1971. </p>
+    </div>
+
+      <div style="height: auto;width:90%;margin:auto;">
+        <h3 style="margin-left:5%;">Tourist Spots</h3>
+
+        <div class="row" >
+          <div class="col-md-3" style="height:70%;width:70%; margin:10px 10px 10px 10px;border-radius: 4px;box-shadow:0 0 1px 1px lightgrey;" >
+            <div class="row" style="padding: 10px 1px; border-radius:2px;">
+
+                        <div class="col-md-auto"  style=" width:auto; height:auto;">
+
+                                <div class="bd-example" >
+                                      <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+
+                                          <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                              <img  src= "{{ url_for('static', filename='img/1.1_1_1920x1080.jpg') }}/" class="d-block w-100" alt="...">
+                                              <div class="carousel-caption d-none d-md-block">
+                                              </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                              <img src="{{ url_for('static', filename='img/1.2_1_1920x1080.jpg') }}/" class="d-block w-100" alt="...">
+
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="{{ url_for('static', filename='img/1.3_1_1920x1080.jpg') }}/" class="d-block w-100" alt="...">
+
+                                              </div>
+                                          </div>
+
+                                      </div>
+                                    </div>
+
+                                    <div class="col-md-auto">
+                                      <h6 class="text-center">Great Himalayan Park</h6>
+                                      <a href="https://en.wikipedia.org/wiki/Great_Himalayan_National_Park" target="_blank"><i class="fa fa-wikipedia-w"></i>wikipedia</a><br>
+                                      <a href= "https://www.google.com/maps?q=The+Great+Himalayan+National+Park&stick=H4sIAAAAAAAAAONgFuLQz9U3MC6wMFXiBLEssivTzLQUs5Ot9HPykxNLMvPz4AyrxJKSosRkELMYAELpSMk6AAAA&um=1&ie=UTF-8&sa=X&ved=0ahUKEwjcteOYmLXlAhVO63MBHWglC98Q_AUIESgB" target="_blank"><i class="fa fa-map-marker"></i>Location</a><br>
+                                      <a href=""><i class="fa fa-inbox"></i> National Park</a><br>
+                                      <a href="/weather#HIMACHALPRADESH"><i class="fa fa-umbrella"></i>weather</a>
+                                  </div></div>
+
+              </div>
+          </div>
+
+          <div class="col-md-3" style="height:70%;width:70%; margin:10px 10px 10px 10px;border-radius: 4px;box-shadow:0 0 1px 1px lightgrey;" >
+            <div class="row" style="padding: 10px 1px; border-radius:2px;">
+
+                        <div class="col-md-auto"  style=" width:auto; height:auto;">
+
+                                <div class="bd-example" >
+                                      <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+
+                                          <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                              <img  src= "{{ url_for('static', filename='img/2.1_1_1920x1080.jpg') }}/" class="d-block w-100" alt="...">
+                                              <div class="carousel-caption d-none d-md-block">
+                                              </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                              <img src="{{ url_for('static', filename='img/2.2_1_1920x1080.jpg') }}/" class="d-block w-100" alt="...">
+
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="{{ url_for('static', filename='img/2.3_1_1920x1080.jpg') }}/" class="d-block w-100" alt="...">
+
+                                              </div>
+                                          </div>
+
+                                      </div>
+                                    </div>
+
+                                    <div class="col-md-auto">
+                                      <h6 class="text-center">Hidimba Devi Temple</h6>
+                                      <a href="https://en.wikipedia.org/wiki/Hidimba_Devi_Temple" target="_blank"><i class="fa fa-wikipedia-w"></i>wikipedia</a><br>
+                                      <a href= "https://www.google.com/maps/place/Hadimba+Devi+Temple/@32.2483447,77.1786337,17z/data=!3m1!4b1!4m5!3m4!1s0x39048806c068e53d:0x2daa244b3eee879c!8m2!3d32.2483447!4d77.1808224" target="_blank"><i class="fa fa-map-marker"></i>Location</a><br>
+                                      <a href=""><i class="fa fa-inbox"></i>Temple</a><br>
+                                      <a href="/weather#HIMACHALPRADESH"><i class="fa fa-umbrella"></i>weather</a>
+                                  </div></div>
+
+              </div>
+          </div>
+
+          <div class="col-md-3" style="height:70%;width:70%; margin:10px 10px 10px 10px;border-radius: 4px;box-shadow:0 0 1px 1px lightgrey;" >
+            <div class="row" style="padding: 10px 1px; border-radius:2px;">
+
+                        <div class="col-md-auto"  style=" width:auto; height:auto;">
+
+                                <div class="bd-example" >
+                                      <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+
+                                          <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                              <img  src= "{{ url_for('static', filename='img/3.1_1_1920x1080.jpg') }}/" class="d-block w-100" alt="...">
+                                              <div class="carousel-caption d-none d-md-block">
+                                              </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                              <img src="{{ url_for('static', filename='img/3.2_1920x1080.jpg') }}/" class="d-block w-100" alt="...">
+
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="{{ url_for('static', filename='img/3.3_1_1920x1080.jpg') }}/" class="d-block w-100" alt="...">
+
+                                              </div>
+                                          </div>
+
+                                      </div>
+                                    </div>
+
+                                    <div class="col-md-auto">
+                                      <h6 class="text-center">Dal Lake</h6>
+                                      <a href="https://en.wikipedia.org/wiki/Dal_Lake_(Himachal_Pradesh)" target="_blank"><i class="fa fa-wikipedia-w"></i>wikipedia</a><br>
+                                      <a href= "https://www.google.com/maps?q=Dal+Lake&stick=H4sIAAAAAAAAAONgFuLQz9U3MC6wMFXiArGMzArNciq0FLOTrfRz8pMTSzLz8-AMq8SSkqLEZBCzGABrEaPsOwAAAA&um=1&ie=UTF-8&sa=X&ved=0ahUKEwjY0oCimLXlAhV-7XMBHRtuAjkQ_AUIEigC" target="_blank"><i class="fa fa-map-marker"></i>Location</a><br>
+                                      <a href=""><i class="fa fa-inbox"></i>Lake</a><br>
+                                      <a href="/weather#HIMACHALPRADESH"><i class="fa fa-umbrella"></i>weather</a>
+                                  </div></div>
+
+              </div>
+          </div>
+        </div>
+
+
+        <div class="row" >
+          <div class="col-md-3" style="height:70%;width:70%; margin:10px 10px 10px 10px;border-radius: 4px;box-shadow:0 0 1px 1px lightgrey;" >
+            <div class="row" style="padding: 10px 1px; border-radius:2px;">
+
+                        <div class="col-md-auto"  style=" width:auto; height:auto;">
+
+                                <div class="bd-example" >
+                                      <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+
+                                          <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                              <img  src= "{{ url_for('static', filename='img/4.1_1_1920x1080.jpg') }}/" class="d-block w-100" alt="...">
+                                              <div class="carousel-caption d-none d-md-block">
+                                              </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                              <img src="{{ url_for('static', filename='img/4.2_1_1920x1080.jpg') }}/" class="d-block w-100" alt="...">
+
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="{{ url_for('static', filename='img/4.3_1_1920x1080.jpg') }}/" class="d-block w-100" alt="...">
+
+                                              </div>
+                                          </div>
+
+                                      </div>
+                                    </div>
+
+                                    <div class="col-md-auto">
+                                      <h6 class="text-center">Rashtrapati Niwas</h6>
+                                      <a href="https://en.wikipedia.org/wiki/Rashtrapati_Niwas" target="_blank"><i class="fa fa-wikipedia-w"></i>wikipedia</a><br>
+                                      <a href= "https://www.google.com/maps/place/Viceregal+Lodge+%26+Botanical+Gardens/@31.1036228,77.1402055,17z/data=!3m1!4b1!4m5!3m4!1s0x3905791b0ab94b1d:0xc32a176520979987!8m2!3d31.1036228!4d77.1423942" target="_blank"><i class="fa fa-map-marker"></i>Location</a><br>
+                                      <a href=""><i class="fa fa-inbox"></i> National Park</a><br>
+                                      <a href="/weather#HIMACHALPRADESH"><i class="fa fa-umbrella"></i>weather</a>
+                                  </div></div>
+
+              </div>
+          </div>
+
+          <div class="col-md-3" style="height:70%;width:70%; margin:10px 10px 10px 10px;border-radius: 4px;box-shadow:0 0 1px 1px lightgrey;" >
+            <div class="row" style="padding: 10px 1px; border-radius:2px;">
+
+                        <div class="col-md-auto"  style=" width:auto; height:auto;">
+
+                                <div class="bd-example" >
+                                      <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+
+                                          <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                              <img  src= "{{ url_for('static', filename='img/5.1_1_1920x1080.jpg') }}/" class="d-block w-100" alt="...">
+                                              <div class="carousel-caption d-none d-md-block">
+                                              </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                              <img src="{{ url_for('static', filename='img/5.2_1_1920x1080.jpg') }}/" class="d-block w-100" alt="...">
+
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="{{ url_for('static', filename='img/5.3_1_1920x1080.jpg') }}/" class="d-block w-100" alt="...">
+
+                                              </div>
+                                          </div>
+
+                                      </div>
+                                    </div>
+
+                                    <div class="col-md-auto">
+                                      <h6 class="text-center">Kangra Fort</h6>
+                                      <a href="https://en.wikipedia.org/wiki/Kangra_Fort" target="_blank"><i class="fa fa-wikipedia-w"></i>wikipedia</a><br>
+                                      <a href= "https://www.google.com/maps/place/Kangra+Fort/@32.0873287,76.2539276,17z/data=!3m1!4b1!4m5!3m4!1s0x391b4590bd14dd71:0xe9db7498648fff42!8m2!3d32.0873287!4d76.2561163" target="_blank"><i class="fa fa-map-marker"></i>Location</a><br>
+                                      <a href=""><i class="fa fa-inbox"></i>Fort</a><br>
+                                      <a href="/weather#HIMACHALPRADESH"><i class="fa fa-umbrella"></i>weather</a>
+                                  </div></div>
+
+              </div>
+          </div>
+
+          <div class="col-md-3" style="height:70%;width:70%; margin:10px 10px 10px 10px;border-radius: 4px;box-shadow:0 0 1px 1px lightgrey;" >
+            <div class="row" style="padding: 10px 1px; border-radius:2px;">
+
+                        <div class="col-md-auto"  style=" width:auto; height:auto;">
+
+                                <div class="bd-example" >
+                                      <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+
+                                          <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                              <img  src= "{{ url_for('static', filename='img/6.1_1_1920x1080.jpg') }}/" class="d-block w-100" alt="...">
+                                              <div class="carousel-caption d-none d-md-block">
+                                              </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                              <img src="{{ url_for('static', filename='img/6.2_1_1920x1080.jpg') }}/" class="d-block w-100" alt="...">
+
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="{{ url_for('static', filename='img/6.3_1_1920x1080.jpg') }}/" class="d-block w-100" alt="...">
+
+                                              </div>
+                                          </div>
+
+                                      </div>
+                                    </div>
+
+                                    <div class="col-md-auto">
+                                      <h6 class="text-center">Rohtang Pass</h6>
+                                      <a href="https://en.wikipedia.org/wiki/Rohtang_Pass" target="_blank"><i class="fa fa-wikipedia-w"></i>wikipedia</a><br>
+                                      <a href= "https://www.google.com/maps/place/Rohtang+La/@32.3717249,77.2424591,16z/data=!3m1!4b1!4m5!3m4!1s0x39047ef0b27a15ad:0xbfdd7e65efefc66b!8m2!3d32.3716426!4d77.2466221" target="_blank"><i class="fa fa-map-marker"></i>Location</a><br>
+                                      <a href=""><i class="fa fa-inbox"></i>Lake</a><br>
+                                      <a href="/weather#HIMACHALPRADESH"><i class="fa fa-umbrella"></i>weather</a>
+                                  </div></div>
+
+              </div>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+    </div>
+
+
+
+
+
+        <!-- Footer -->
+<section id="footer">
+		<div class="container">
+			<div class="row text-center text-xs-center text-sm-left text-md-left">
+				<div class="col-xs-12 col-sm-4 col-md-3">
+					<h5>Home page</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="/home"><i class="fa fa-angle-double-right"></i>Home</a></li>
+
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-3">
+					<h5>About Us</h5>
+					<ul class="list-unstyled quick-links">
+
+						<li><a href="/about"><i class="fa fa-angle-double-right"></i>About</a></li>
+
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-3">
+					<h5>Weather</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="/weather"><i class="fa fa-angle-double-right"></i>Weather</a></li>
+
+					</ul>
+                </div>
+                <div style="margin: auto;" class="col-xs-12 col-sm-4 col-md-3">
+					<h5>Application</h5>
+					<ul class="list-unstyled quick-links">
+                        <li><a href=""><img src="/static/img/googleplay.jpg" style="height:30.5px;width:103.25px;border-radius:10px;"></li>
+						<li><a href=""><i class="fa fa-angle-double-right"></i>Soon on play store</a></li>
+
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+
+					<ul class="list-unstyled text-center" style="display: flex; margin: auto;justify-content: space-between;width: 50%;">
+                                    <li ><a href="javascript:void();"><img src="{{ url_for('static', filename='img/twitter.png') }}/" height="30px" width="30px"></a></li>
+                                    <li ><a href="https://www.instagram.com/sail_at_india/" target="_blank"><img src="{{ url_for('static', filename='img/instagram.png') }}/" height="30px" width="30px"></i></a></li>
+						<li ><a href="mailto:sailatindia@gmail.com"><img src="{{ url_for('static', filename='img/search.png') }}/" height="30px" width="30px"></a></li>
+
+                              </ul>
+				</div>
+				</hr>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+					<p>This site was built by <u><a href=""><b>Mechanical</b></a></u> Students Of Karpagam College of Engineering . For further enquiry contact above links of us</p>
+					<p class="h6">&copy All right Reserved.<a class="text-green ml-2" >Team SAIL_INDIA</a></p>
+				</div>
+				</hr>
+			</div>
+		</div>
+	</section>
+    <!-- ./Footer -->
+
+
+
+  </body>
+  </html>

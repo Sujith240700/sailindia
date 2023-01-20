@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tour india | Wikipedia | Location | State wise</title>
+        <meta charset="utf-8">
+        <meta name="google-site-verification" content="RcA7sO0ite6camvL6kOoWA1LlFbGoLClnbF9IEbxs4I" />
+      <link rel="icon" href="{{ url_for('static', filename='img/logo.png') }}/" type="image/icon type">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+      <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <meta name="google-site-verification" content="Fq1KznQqQZtcKu_kGkM8vYbwFLl8h5F7mI_7fcRZq14" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}/">
+    <style>
+
+.section
+{
+
+	background-size:cover;
+	width:100%;
+	height:650px;
+	position:relative;
+	overflow:hidden;
+}
+
+/*body{
+        background-color:black !important;
+
+    }
+
+
+.snow1
+{
+	background:url("{{ url_for('static', filename='img/snow.png') }}/");
+	z-index:-5;
+	background-repeat:repeat;
+	width:100%;
+	height:100%;
+	position:absolute;
+	top:0;
+	left:0;
+	animation:animateOne 40s infinite linear;
+
+}
+
+.snow2
+{
+	background:url("{{ url_for('static', filename='img/snow.png') }}/");
+	z-index:-3;
+	background-repeat:repeat;
+	width:100%;
+	height:100%;
+	position:absolute;
+	top:0;
+	left:0;
+	animation:animateSecond 60s infinite linear;
+
+}
+
+
+
+@keyframes animateOne
+{
+	0%
+	{
+		background-position: 0px 0px
+	}
+
+	100%
+	{
+		background-position: 100px 650px
+	}
+}
+
+
+@keyframes animateSecond
+{
+	0%
+	{
+		background-position: 0px -100px
+	}
+
+	100%
+	{
+		background-position: 0px 650px
+	}
+}*/
+
+
+    </style>
+<!-- Google Analytics -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-XXXXX-Y', 'auto');
+ga('send', 'pageview');
+</script>
+<!-- End Google Analytics -->
+</head>
+
+<body class="snow2 snow1">
+
+
+    <div class="container ">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="/home"><img src="{{ url_for('static', filename='img/logo.png') }}/"></a>
+                    <button class="btn navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        &#9776;
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                      <ul class="navbar-nav ml-auto text-center">
+                        <li class="nav-item">
+                          <a class="nav-link disabled" href="/home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="/weather">Weather</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href='/signup'>Signup</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="/about">About</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </nav>
+
+    </div>
+    <div class="container">
+        <div class="warpper">
+            <div class="row" style="box-shadow: 0 0 40px 2px #1900e6 !impotant;">
+            <div class=" col-md-7 ">
+                    <img class="homeimg image-responsive mx-auto align-self-center img-fluid" src="{{ url_for('static', filename='img/home_img.jpg') }}/" class="feature-img">
+                </div>
+            <div class="col-md-5">
+                <div class="feature-box">
+                    <h1>Let's Sail</h1>
+                    <p >Take a tour around the beautiful <font color="orange" size="10px">I</font><font size="10px" color="blue">N</font><font size="10px" color="green">D</font><font size="10px" color="orange">I</font><font size="10px" color="blue">A</font></p>
+                    <a href="#start" class="btn-one">Let's  Sail</a>
+                    <a href="/signup" class="btn-two">Sign-up</a>
+                </div>
+            </div>
+
+            </div>
+        </div>
+    </div>
+    <!--about-->
+    <div class="container" >
+    <div class="container row" >
+            <h1 style="margin-top:auto;">India</h1>
+          <p style="text-align: center;"> Travel and Tourism Competitiveness Report 2019 ranked India 34th out of 140 countries overall. India improved its ranking by 6 places over the 2017 report which was the greatest improvement among the top 25% of countries ranked. The report ranks the price competitiveness of India's tourism sector 13th out of 140 countries. It mentions that India has quite good air transport infrastructure (ranked 33rd), particularly given the country's stage of development, and reasonable ground and port infrastructure (ranked 28th). The country also scores high on natural resources (ranked 14th), and cultural resources and business travel (ranked 8th).However, some other aspects of its tourism infrastructure remain somewhat underdeveloped.The nation has many hotel rooms per capita by international comparison and low ATM penetration.The World Tourism Organization reported that India's receipts from tourism during 2012 ranked 16th in the world, and 7th among Asian and Pacific countries.</p>
+    </div>
+</div>
+
+
+    <!--State list-->
+
+    <div class="container" >
+            <h1 id="start" style="margin-top:auto;">Select state</h1>
+            <div class="row"  style="margin-top:auto;  height:auto; ">
+      <ul style="display:flex; margin:auto; width:90%; justify-content:space-between; background-color:#ffa0d2; border-radius:50px;  list-style-type:none  !important;padding:3px;" class="trigger">
+                  <li></li>
+                  <li><a style="color: #fff8cd;  text-decoration: none;" href="#A">A</a></li>
+                  <li><a style="color: #fff8cd;  text-decoration: none;" href="#B">B</a></li>
+                  <li><a style="color: #fff8cd;  text-decoration: none;"href="#C">C</a></li>
+                  <li>.</li>
+                  <li>.</li>
+                  <li>.</li>
+                  <li><a style="color: #fff8cd;  text-decoration: none;" href="#G">G</a></li>
+                  <li><a style="color: #fff8cd;  text-decoration: none;" href="#H">H</a></li>
+                  <li>.</li>
+                  <li><a style="color: #fff8cd;  text-decoration: none;" href="#J">J</a></li>
+                  <li><a style="color: #fff8cd;  text-decoration: none;" href="#K">K</a></li>
+                  <li>.</li>
+                  <li><a style="color: #fff8cd;  text-decoration: none;" href="#M">M</a></li>
+                  <li><a style="color: #fff8cd;  text-decoration: none;" href="#N">N</a></li>
+                  <li><a style="color: #fff8cd;  text-decoration: none;" href="#O">O</a></li>
+                  <li><a style="color: #fff8cd;  text-decoration: none;" href="#P">P</a></li>
+                  <li>.</li>
+                  <li><a style="color: #fff8cd;  text-decoration: none;" href="#R">R</a></li>
+                  <li><a style="color: #fff8cd;  text-decoration: none;" href="#S">S</a></li>
+                  <li><a style="color: #fff8cd;  text-decoration: none;" href="#T">T</a></li>
+                  <li><a style="color: #fff8cd;  text-decoration: none;" href="#U">U</a></li>
+                  <li>.</li>
+                  <li><a style="color: #fff8cd;  text-decoration: none;" href="#W">W</a></li>
+                  <li>.</li>
+                  <li>.</li>
+                  <li>.</li>
+                  <li></li>
+                  </ul>
+            </div>
+
+
+            <div class="row" >
+            <div ID="A"  class="state-container col-md-2.5 ">
+                  <div class="selection-container">
+                        <div ID="A" class="select-state">
+                              <a href="/home/state/ANDRAPRADESH"></a>
+                              <img src="https://static.coindesk.com/wp-content/uploads/2018/08/Chaiminar--e1533545551503-860x430.jpg" alt="state-image" >
+                        </div>
+                        <a class="name" href="/home/state/ANDRAPRADESH">Andra pradesh</a>
+                  </div>
+            </div>
+            <div class="state-container col-md-2.5 ">
+            <div class="selection-container">
+                  <div class="select-state">
+                        <a href="/home/state/ARUNACHALPRADESH"></a>
+                        <img src="https://images.thrillophilia.com/image/upload/s--5QtifgGD--/c_fill,f_auto,fl_strip_profile,h_300,q_auto,w_375/v1/images/photos/000/134/057/original/1539087230_shutterstock_748402771.jpg.jpg?1539087229" alt="state-image" >
+                  </div>
+                  <a class="name" href="/home/state/ARUNACHALPRADESH"><font size="2.5px">Arunachal Pradesh</font></a>
+            </div>
+      </div>
+      <div class="state-container col-md-2.5 ">
+            <div class="selection-container">
+                  <div class="select-state">
+                        <a href="/home/state/ASSAM"></a>
+                        <img src="http://1.bp.blogspot.com/-Snp4l5pI_dE/UqAV5vwp8CI/AAAAAAAABAI/kwW9QxEIXg0/s1600/assam.jpg" alt="state-image" >
+                  </div>
+                  <a class="name" href="/home/state/ASSAM">Assam</a>
+            </div>
+      </div>
+      <div ID="B" class="state-container col-md-2.5 ">
+            <div class="selection-container">
+                  <div class="select-state">
+                        <a href="/home/state/BIHAR"></a>
+                        <img src="https://www.tripsavvy.com/thmb/qk5fPdcQs_zSFkkO4gFF_o8_JOY=/950x0/filters:no_upscale():max_bytes(150000):strip_icc()/mahabodhi-temple-complex-98259687-5b579ce946e0fb00715444e6.jpg" alt="state-image" >
+                  </div>
+                  <a class="name" href="/home/state/BIHAR">Bihar</a>
+            </div>
+      </div>
+            </div>
+
+            <div class="row" >
+            <div ID="C" class="state-container col-md-2.5 ">
+                  <div class="selection-container">
+                        <div  class="select-state">
+                              <a href="/home/state/CHHATTISGARH"></a>
+                              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdBiOPS--F-qnGrKArYmDuraSo5uxkIkteeaWAD1jcRmcXTe2O" alt="state-image" >
+                        </div>
+                        <a class="name" href="/home/state/CHHATTISGARH">Chhattisgarh</a>
+                  </div>
+            </div>
+
+            <div  ID="G" class="state-container col-md-2.5 ">
+                  <div class="selection-container">
+                        <div class="select-state">
+                              <a href="/home/state/GOA"></a>
+                              <img src="https://cdn1.tripoto.com/media/filter/tst/img/567364/Image/1546256936_goa_cover_image_1472037578p.jpg" alt="state-image" >
+                        </div>
+                        <a class="name" href="/home/state/GOA">Goa</a>
+                  </div>
+            </div>
+
+            <div class="state-container col-md-2.5 ">
+            <div class="selection-container">
+                  <div  class="select-state">
+                        <a href="/home/state/GUJARAT"></a>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0VQ4G_QFlOT47eTYUGwb5AJ3V8OYPVibwq1Mwr2QYiJrtCpxVtA" alt="state-image" >
+                  </div>
+                  <a class="name" href="/home/state/GUJARAT">Gujarat</a>
+            </div>
+      </div>
+      <div ID="H" class="state-container col-md-2.5 ">
+            <div class="selection-container">
+                  <div class="select-state">
+                        <a href="/home/state/HARYANA"></a>
+                        <img src="https://i0.wp.com/www.tripplans.in/wp-content/uploads/2019/03/Kurukkshetra.jpg?resize=533%2C325&ssl=1" alt="state-image" >
+                  </div>
+                  <a class="name" href="/home/state/HARYANA">Haryana</a>
+            </div>
+      </div>
+
+            </div>
+            <div class="row" >
+            <div class="state-container col-md-2.5 ">
+                  <div class="selection-container">
+                        <div class="select-state">
+                              <a href="/home/state/HIMACHALPRADESH"></a>
+                              <img src="https://content.jdmagicbox.com/comp/shimla/55/0177p177std65055/catalogue/himachal-pradesh-tourism-development-corporation-ltd-marketing-office-agpo-shimla-tour-operators-2hvlkug.jpg" alt="state-image" >
+                        </div>
+                        <a class="name" href="/home/state/HIMACHALPRADESH">Himachal Pradesh</a>
+                  </div>
+            </div>
+            <div ID="J"class="state-container col-md-2.5 ">
+            <div class="selection-container">
+                  <div  class="select-state">
+                        <a href="/home/state/JHARKHAND"></a>
+                        <img src="/static/img/JHARKHAND.jpg" alt="state-image" >
+                  </div>
+                  <a class="name" href="/home/state/JHARKHAND">Jharkhand</a>
+            </div>
+      </div>
+      <div ID="K" class="state-container col-md-2.5 ">
+            <div class="selection-container">
+                  <div  class="select-state">
+                        <a href="/home/state/KARNATAKA"></a>
+                        <img src="https://wallpapercave.com/wp/KlWqhAH.jpg" alt="state-image" >
+                  </div>
+                  <a class="name" href="/home/state/KARNATAKA">Karnataka</a>
+            </div>
+      </div>
+      <div class="state-container col-md-2.5 ">
+            <div class="selection-container">
+                  <div  class="select-state">
+                        <a href="/home/state/KERALA"></a>
+                        <img src="http://www.tourtravelogy.com/wp-content/uploads/2016/08/kerala-tourism-promotional.jpg" alt="state-image" >
+                  </div>
+                  <a class="name" href="/home/state/KERALA">Kerala</a>
+            </div>
+      </div>
+            </div>
+
+            <div class="row" >
+            <div class="state-container col-md-2.5 ">
+                  <div class="selection-container">
+                        <div ID="M" class="select-state">
+                              <a href="/home/state/MADHYAPRADESH"></a>
+                              <img src="https://d6qyz3em3b312.cloudfront.net/upload/images/media/2017/03/16/shutterstock_67359169.1920x1080.jpg" alt="state-image" >
+                        </div>
+                        <a class="name" href="/home/state/MADHYAPRADESH">Madhya Pradesh</a>
+                  </div>
+            </div>
+            <div ID="M" class="state-container col-md-2.5 ">
+            <div class="selection-container">
+                  <div  class="select-state">
+                        <a href="/home/state/MAHARASHTRA"></a>
+                        <img src="https://s1.dmcdn.net/v/EWr8Y1M_59oKam-PV/x1080" alt="state-image" >
+                  </div>
+                  <a class="name" href="/home/state/MAHARASHTRA">Maharashtra</a>
+            </div>
+      </div>
+      <div class="state-container col-md-2.5 ">
+            <div class="selection-container">
+                  <div class="select-state">
+                        <a href="/home/state/MANIPUR"></a>
+                        <img src="https://allresourceupdates.files.wordpress.com/2013/06/uqi3p.jpg" alt="state-image" >
+                  </div>
+                  <a class="name" href="/home/state/MANIPUR">Manipur</a>
+            </div>
+      </div>
+      <div class="state-container col-md-2.5 ">
+            <div class="selection-container">
+                  <div  class="select-state">
+                        <a href="/home/state/MEGHALAYA"></a>
+                        <img src="https://media.gettyimages.com/photos/majestic-meghalaya-picture-id636357302?s=612x612" alt="state-image" >
+                  </div>
+                  <a class="name" href="/home/state/MEGHALAYA">Meghalaya</a>
+            </div>
+      </div>
+            </div>
+            <div class="row" >
+            <div class="state-container col-md-2.5 ">
+                  <div class="selection-container">
+                        <div  class="select-state">
+                              <a href="/home/state/MIZORAM"></a>
+                              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMPF0lbdUOAQd6Bzs4OzKqg9xq60UCkmw7on2-TpVV3qSynyBD" alt="state-image" >
+                        </div>
+                        <a class="name" href="/home/state/MIZORAM">Mizoram</a>
+                  </div>
+            </div>
+            <div ID="N" class="state-container col-md-2.5 ">
+            <div class="selection-container">
+                  <div  class="select-state">
+                        <a href="/home/state/NAGALAND"></a>
+                        <img src="https://www.tripsavvy.com/thmb/pqYokbIFU7DLE-k72KDDsR7UG3o=/1884x1413/smart/filters:no_upscale()/GettyImages-529838962-597600ad685fbe0011d72b7d.jpg" alt="state-image" >
+                  </div>
+                  <a class="name" href="/home/state/NAGALAND">Nagaland</a>
+            </div>
+      </div>
+      <div ID="O" class="state-container col-md-2.5 ">
+            <div class="selection-container">
+                  <div  class="select-state">
+                        <a href="/home/state/ODISHA"></a>
+                        <img src="https://i.pinimg.com/originals/cf/44/f6/cf44f60e97ae155f9e52e4f82ea24d33.jpg" alt="state-image" >
+                  </div>
+                  <a class="name" href="/home/state/ODISHA">Odisha</a>
+            </div>
+      </div>
+      <div  ID="P" class="state-container col-md-2.5 ">
+            <div class="selection-container">
+                  <div   class="select-state">
+                        <a href="/home/state/PUNJAB"></a>
+                        <img src="https://i.pinimg.com/originals/5b/86/09/5b860912c75d0d651124d5d5c43b0eae.jpg" alt="state-image" >
+                  </div>
+                  <a class="name" href="/home/state/PUNJAB">Punjab</a>
+            </div>
+      </div>
+            </div>
+
+            <div class="row" >
+            <div ID="R" class="state-container col-md-2.5 ">
+                  <div class="selection-container">
+                        <div  class="select-state">
+                              <a href="/home/state/RAJASTHAN"></a>
+                              <img src=" https://images6.alphacoders.com/562/562059.jpg" alt="state-image" >
+                        </div>
+                        <a class="name" href="/home/state/RAJASTHAN">Rajasthan</a>
+                  </div>
+            </div>
+            <div ID="S"class="state-container col-md-2.5 ">
+            <div class="selection-container">
+                  <div  class="select-state">
+                        <a href="/home/state/SIKKIM"></a>
+                        <img src="https://image3.mouthshut.com/images/imagesp/925753113s.jpg" alt="state-image" >
+                  </div>
+                  <a class="name" href="/home/state/SIKKIM"> Sikkim </a>
+            </div>
+      </div>
+      <div ID="T" class="state-container col-md-2.5 ">
+            <div class="selection-container">
+                  <div  class="select-state">
+                        <a href="/home/state/TAMILNADU"></a>
+                        <img src="https://live.staticflickr.com/1707/25158454746_01d7571447_b.jpg" alt="state-image" >
+                  </div>
+                  <a class="name" href="/home/state/TAMILNADU">Tamil Nadu </a>
+            </div>
+      </div>
+      <div class="state-container col-md-2.5 ">
+            <div class="selection-container">
+                  <div  class="select-state">
+                        <a href="/home/state/TELANGANA"></a>
+                        <img src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AADQ5w4.img?h=416&w=624&m=6&q=60&u=t&o=f&l=f" alt="state-image" >
+                  </div>
+                  <a class="name" href="/home/state/TELANGANA">Telangana</a>
+            </div>
+      </div>
+            </div>
+
+            <div class="row" >
+            <div class="state-container col-md-2.5 ">
+                  <div class="selection-container">
+                        <div  class="select-state">
+                              <a href="/home/state/TRIPURA"></a>
+                              <img src="http://www.excitingindia.in/wp-content/uploads/2016/11/Udaipur-Mata-bari-Tripura.jpg" alt="state-image" >
+                        </div>
+                        <a class="name" href="/home/state/TRIPURA">Tripura</a>
+                  </div>
+            </div>
+            <div ID="U" class="state-container col-md-2.5 ">
+            <div class="selection-container">
+                  <div  class="select-state">
+                        <a href="/home/state/UTTARPRADESH"></a>
+                        <img src="https://www.holidify.com/images/bgImages/MATHURA.jpg" alt="state-image" >
+                  </div>
+                  <a class="name" href="/home/state/UTTARPRADESH">Uttar Pradesh</a>
+            </div>
+      </div>
+      <div class="state-container col-md-2.5 ">
+            <div class="selection-container">
+                  <div class="select-state">
+                        <a href="/home/state/UTTARAKHAND"></a>
+                        <img src="https://www.trawell.in/admin/images/upload/222377999Badrinath_Hemkund_Sahib_Main.jpg" alt="state-image" >
+                  </div>
+                  <a class="name" href="/home/state/UTTARAKHAND">Uttarakhand</a>
+            </div>
+      </div>
+      <div ID="W" class="state-container col-md-2.5 ">
+            <div class="selection-container">
+                  <div  class="select-state">
+                        <a href="/home/state/WESTBENGAL"></a>
+                        <img src="https://st1.latestly.com/wp-content/uploads/2018/08/howrah-bridge.jpg" alt="state-image" >
+                  </div>
+                  <a class="name" href="/home/state/WESTBENGAL">West Bengal</a>
+            </div>
+      </div>
+      </div>
+
+      <!--Triggers-->
+      <div class="row"  style="margin-top:auto;  height:auto; ">
+      <ul style="display:flex; margin:auto; width:90%; justify-content:space-between; background-color:#ffa0d2; border-radius:50px;  list-style-type:none  !important;padding:3px;" class="trigger">
+                  <li></li>
+                  <li><a style="color: #fff8cd;  text-decoration: none;" href="#A">A</a></li>
+                  <li><a style="color: #fff8cd;  text-decoration: none;" href="#B">B</a></li>
+                  <li><a style="color: #fff8cd;  text-decoration: none;"href="#C">C</a></li>
+                  <li>.</li>
+                  <li>.</li>
+                  <li>.</li>
+                  <li><a style="color: #fff8cd;  text-decoration: none;" href="#G">G</a></li>
+                  <li><a style="color: #fff8cd;  text-decoration: none;" href="#H">H</a></li>
+                  <li>.</li>
+                  <li><a style="color: #fff8cd;  text-decoration: none;" href="#J">J</a></li>
+                  <li><a style="color: #fff8cd;  text-decoration: none;" href="#K">K</a></li>
+                  <li>.</li>
+                  <li><a style="color: #fff8cd;  text-decoration: none;" href="#M">M</a></li>
+                  <li><a style="color: #fff8cd;  text-decoration: none;" href="#N">N</a></li>
+                  <li><a style="color: #fff8cd;  text-decoration: none;" href="#O">O</a></li>
+                  <li><a style="color: #fff8cd;  text-decoration: none;" href="#P">P</a></li>
+                  <li>.</li>
+                  <li><a style="color: #fff8cd;  text-decoration: none;" href="#R">R</a></li>
+                  <li><a style="color: #fff8cd;  text-decoration: none;" href="#S">S</a></li>
+                  <li><a style="color: #fff8cd;  text-decoration: none;" href="#T">T</a></li>
+                  <li><a style="color: #fff8cd;  text-decoration: none;" href="#U">U</a></li>
+                  <li>.</li>
+                  <li><a style="color: #fff8cd;  text-decoration: none;" href="#W">W</a></li>
+                  <li>.</li>
+                  <li>.</li>
+                  <li>.</li>
+                  <li></li>
+                  </ul>
+            </div>
+
+      </div>
+
+
+  <!--Uniontetories list-->
+  <div class="container">
+      <h1 style="margin-top:auto;">Union Territories</h1>
+      <div class="row" >
+            <div class="state-container col-md-2.5 ">
+                  <div class="selection-container">
+                        <div class="select-state">
+                              <a href="/home/UnionTerritories/ANDAMANANDNICOBAR"></a>
+                              <img src="/static/img/Andaman%20and%20Nicobar%20Islands/1.1_1920x1080.jpg" alt="ut-image" >
+                        </div>
+                        <a class="name" href="/home/UnionTerritories/ANDAMANANDNICOBAR" ><font size="2.99px" color=#ffcc00>Andaman and Nicobar</font></a>
+                  </div>
+            </div>
+            <div class="state-container col-md-2.5 ">
+            <div class="selection-container">
+                  <div class="select-state">
+                        <a href="/home/UnionTerritories/DADRAANDNAGARHAVELI"></a>
+                        <img src="/static/img/Vanganga1.jpg" alt="ut-image" >
+                  </div>
+                  <a class="name" href="/home/UnionTerritories/DADRAANDNAGARHAVELI" ><font size="1.8px" color=#ffcc00>Dadra and Nagar Haveli</font></a>
+            </div>
+      </div>
+
+      <div class="state-container col-md-2.5 ">
+            <div class="selection-container">
+                  <div class="select-state">
+                        <a href="/home/UnionTerritories/LAKSHADWEEP"></a>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRZH23t6AQ9bNYnb6TS7z272DO45FeNrzcZO502LvRTTGKotOzV" alt="ut-image" >
+                  </div>
+                  <a class="name" href="/home/UnionTerritories/LAKSHADWEEP" ><font size="2.99px" color=#ffcc00>Lakshadweep</font></a>
+            </div>
+      </div>
+
+      <div class="state-container col-md-2.5 ">
+                  <div class="selection-container">
+                        <div class="select-state">
+                              <a href="/home/UnionTerritories/PUDUCHERRY"></a>
+                              <img src="https://dd0w3jaz1pep7.cloudfront.net/assets/images/tourism/city/Pondicherry/pondicherry-4fcd3fcde44d78692f22ece6.jpg" alt="ut-image" >
+                        </div>
+                        <a class="name" href="/home/UnionTerritories/PUDUCHERRY" ><font size="2.99px" color=#ffcc00>Puducherry</font></a>
+                  </div>
+            </div>
+      </div>
+      <div class="row" >
+                  <div class="state-container col-md-2.5 ">
+                        <div class="selection-container">
+                              <div class="select-state">
+                                    <a href="/home/UnionTerritories/CHANDIGARH"></a>
+                                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/b7/e8/55/private-chandigarh-city.jpg" alt="ut-image" >
+                              </div>
+                              <a class="name" href="/home/UnionTerritories/CHANDIGARH" ><font size="2.99px" color=#ffcc00>chandigarh</font></a>
+                        </div>
+                        </div>
+                        <div class="state-container col-md-2.5 ">
+                                    <div class="selection-container">
+                                          <div class="select-state">
+                                                <a href="/home/UnionTerritories/DAMANANDDIU"></a>
+                                                <img src="https://mk0wheelfunrentqnvtf.kinstacdn.com/wp-content/uploads/2018/08/2018-7-Trip-Savy-9-Things-To-Do-Pismo-800x498.jpg" alt="ut-image" >
+                                          </div>
+                                          <a class="name" href="/home/UnionTerritories/DAMANANDDIU" ><font size="2.99px" color=#ffcc00>Daman and Diu</font></a>
+                                    </div>
+                                    </div>
+                        <div class="state-container col-md-2.5 ">
+                                    <div class="selection-container">
+                                          <div class="select-state">
+                                                <a href="/home/UnionTerritories/NEWDELHI"></a>
+                                                <img src="https://routemate.in/wp-content/uploads/2017/07/How-to-choose-the-best-tour-operator-for-India.jpg" alt="ut-image" >
+                                          </div>
+                                          <a class="name" href="/home/UnionTerritories/NEWDELHI" ><font size="2.99px" color=#ffcc00>New Delhi</font></a>
+                                    </div>
+                  </div>
+
+                  </div>
+
+                  <div class="row" >
+                              <div class="state-container col-md-2.5 ">
+                                    <div class="selection-container">
+                                          <div class="select-state">
+                                                <a href="/home/UnionTerritories/JAMMUANDKASHMIR"></a>
+                                                <img src="https://upload.wikimedia.org/wikipedia/commons/f/f8/Rangdum_village_grazing_fields.jpg" alt="ut-image" >
+                                          </div>
+                                          <a class="name" href="/home/UnionTerritories/JAMMUANDKASHMIR" ><font size="2.99px" color=#ffcc00>Jammu and Kashmir</font></a>
+                                    </div>
+                                    </div>
+                              <div class="state-container col-md-2.5 ">
+                                          <div class="selection-container">
+                                                <div class="select-state">
+                                                      <a href="/home/UnionTerritories/LADAKH"></a>
+                                                      <img src="https://images.thrillophilia.com/image/upload/s--01Ekfcog--/c_fill,f_auto,fl_strip_profile,h_600,q_auto,w_975/v1/images/photos/000/027/609/original/1551712132_shutterstock_1134859946.jpg.jpg?1551712132" alt="ut-image" >
+                                                </div>
+                                                <a class="name" href="/home/UnionTerritories/LADAKH" ><font size="2.99px" color=#ffcc00>Ladakh</font></a>
+                                          </div>
+                                          </div>
+
+
+                              </div>
+
+</div>
+<!-- Footer -->
+<section id="footer">
+		<div class="container">
+			<div class="row text-center text-xs-center text-sm-left text-md-left">
+				<div class="col-xs-12 col-sm-4 col-md-3">
+					<h5>Home page</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="/home"><i class="fa fa-angle-double-right"></i>Home</a></li>
+
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-3">
+					<h5>About Us</h5>
+					<ul class="list-unstyled quick-links">
+
+						<li><a href="/about"><i class="fa fa-angle-double-right"></i>About</a></li>
+
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-3">
+					<h5>Weather</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="/weather"><i class="fa fa-angle-double-right"></i>Weather</a></li>
+
+					</ul>
+                </div>
+                <div style="margin: auto;" class="col-xs-12 col-sm-4 col-md-3">
+					<h5>Application</h5>
+					<ul class="list-unstyled quick-links">
+                        <li><a href=""><img src="/static/img/googleplay.jpg" style="height:30.5px;width:103.25px;border-radius:10px;"></li>
+						<li><a href=""><i class="fa fa-angle-double-right"></i>Soon on play store</a></li>
+
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+
+					<ul class="list-unstyled text-center" style="display: flex; margin: auto;justify-content: space-between;width: 50%;">
+                                    <li ><a href="javascript:void();"><img src="{{ url_for('static', filename='img/twitter.png') }}/" height="30px" width="30px"></a></li>
+                                    <li ><a href="https://www.instagram.com/sail_at_india/" target="_blank"><img src="{{ url_for('static', filename='img/instagram.png') }}/" height="30px" width="30px"></i></a></li>
+						<li ><a href="mailto:sailatindia@gmail.com"><img src="{{ url_for('static', filename='img/search.png') }}/" height="30px" width="30px"></a></li>
+
+                              </ul>
+				</div>
+				</hr>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+					<p>This site was built by <u><a href=""><b>Mechanical</b></a></u> Students Of Karpagam College of Engineering . For further enquiry contact above links of us</p>
+					<p class="h6">&copy All right Reserved.<a class="text-green ml-2" >Team SAIL_INDIA</a></p>
+				</div>
+				</hr>
+			</div>
+		</div>
+	</section>
+    <!-- ./Footer -->
+</body>
+
+</html>

@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+        <head>
+            <title>SAIL - BIHAR</title>
+        <link rel="icon" href="{{ url_for('static', filename='img/logo.png') }}/" type="image/icon type">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}/">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <style>
+          .row{display:-ms-flexbox;display:flex;justify-content:center;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-right:-15px;}
+
+          </style>
+
+
+</head>
+<body>
+
+    <div id="wrapper">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="/home"><img src="{{ url_for('static', filename='img/logo.png') }}/"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      &#9776;
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                      <ul class="navbar-nav ml-auto text-center">
+                        <li class="nav-item">
+                          <a class="nav-link" href="/home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="/weather">Weather</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href='/signup'>Sign-up</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="/about">About</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </nav>
+
+    </div>
+
+    <div style="height:auto;width:90%;margin:auto;">
+        <h3 style="margin-left: 5%; margin-top:auto;">BIHAR</h3>
+        <p style="margin-left: 5%; margin-top:auto;">Bihar (/bɪˈhɑːr/; Hindi pronunciation: [bɪˈɦaːr]) is a state in eastern India. It is the twelfth-largest Indian state, with an area of 94,163 km2 (36,357 sq mi). The third-largest state by population, it is contiguous with Uttar Pradesh to its west, Nepal to the north, the northern part of West Bengal to the east, and with Jharkhand to the south. The Bihar plain is split by the river Ganges, which flows from west to east. Three main regions converge in the state: Magadh, Mithila, and Bhojpur.</p>
+        <hr style="margin-left: 5%; margin-top:auto;">
+        <p style="margin-left: 5%; margin-top:auto;">In ancient and classical India, the area that is now Bihar was considered a centre of power, learning, and culture.From Magadha arose India's first empire, the Maurya empire, as well as one of the world's most widely adhered-to religions: Buddhism.Magadha empires, notably under the Maurya and Gupta dynasties, unified large parts of South Asia under a central rule. Another region of Bihar is Mithila which was an early centre of learning and the centre of the Videha kingdom.</p>
+      </div>
+
+
+
+      <div style="height: auto;width:90%;margin:auto;">
+        <h3 style="margin-left:5%;">Tourist Spots</h3>
+
+        <div class="row" >
+          <div class="col-md-3" style="height:70%;width:70%; margin:10px 10px 10px 10px;border-radius: 4px;box-shadow:0 0 1px 1px lightgrey;" >
+            <div class="row" style="padding: 10px 1px; border-radius:2px;">
+
+                        <div class="col-md-auto"  style=" width:auto; height:auto;">
+
+                                <div class="bd-example" >
+                                      <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+
+                                          <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                              <img  src= "https://i.pinimg.com/originals/a5/6a/76/a56a76057853cd13c6ade510429ce075.jpg" class="d-block w-100" alt="...">
+                                              <div class="carousel-caption d-none d-md-block">
+                                              </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                              <img src="https://i.pinimg.com/originals/ba/80/12/ba8012a5be581e80ab0f36b2fd49a647.jpg" class="d-block w-100" alt="...">
+
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="https://s2.dmcdn.net/v/MzrUb1QOless0m_-2/x1080" class="d-block w-100" alt="...">
+
+                                              </div>
+                                          </div>
+
+                                      </div>
+                                    </div>
+
+                                    <div class="col-md-auto">
+                                      <h6 class="text-center">Mahabodhi Temple</h6>
+                                      <a href="https://en.wikipedia.org/wiki/Mahabodhi_Temple" target="_blank"><i class="fa fa-wikipedia-w"></i>wikipedia</a><br>
+                                      <a href= "https://www.google.com/maps/place/Mahabodhi+Temple/@24.6959222,84.9914193,15z/data=!4m5!3m4!1s0x0:0xf8dd2e286fa80c97!8m2!3d24.6959222!4d84.9914193" target="_blank"><i class="fa fa-map-marker"></i>Location</a><br>
+                                      <a href=""><i class="fa fa-inbox"></i>Temple</a><br>
+                                      <a href="/weather#BIHAR"><i class="fa fa-umbrella"></i>weather</a>
+                                  </div></div>
+
+              </div>
+          </div>
+
+          <div class="col-md-3" style="height:70%;width:70%; margin:10px 10px 10px 10px;border-radius: 4px;box-shadow:0 0 1px 1px lightgrey;" >
+            <div class="row" style="padding: 10px 1px; border-radius:2px;">
+
+                        <div class="col-md-auto"  style=" width:auto; height:auto;">
+
+                                <div class="bd-example" >
+                                      <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+
+                                          <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                              <img  src= "https://s1.dmcdn.net/v/O7a1Q1RJ7Vfq8_j9o/x1080" class="d-block w-100" alt="...">
+                                              <div class="carousel-caption d-none d-md-block">
+                                              </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                              <img src="https://s1.dmcdn.net/v/O7a1Q1RJ7Vfq8_j9o/x1080" class="d-block w-100" alt="...">
+
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="https://s1.dmcdn.net/v/O7a1Q1RJ7Vfq8_j9o/x1080" class="d-block w-100" alt="...">
+
+                                              </div>
+                                          </div>
+
+                                      </div>
+                                    </div>
+
+                                    <div class="col-md-auto">
+                                      <h6 class="text-center">Golghar</h6>
+                                      <a href="https://en.wikipedia.org/wiki/Golghar" target="_blank"><i class="fa fa-wikipedia-w"></i>wikipedia</a><br>
+                                      <a href= "https://www.google.com/maps/place/Golghar/@25.620337,85.139448,15z/data=!4m2!3m1!1s0x0:0x18cd15ae7d0e6cd?sa=X&ved=2ahUKEwiciNezpLflAhUFOisKHdO0AlUQ_BIwJHoECAoQCA" target="_blank"><i class="fa fa-map-marker"></i>Location</a><br>
+                                      <a href=""><i class="fa fa-inbox"></i>Temple</a><br>
+                                      <a href="/weather#BIHAR"><i class="fa fa-umbrella"></i>weather</a>
+                                  </div></div>
+
+              </div>
+          </div>
+
+          <div class="col-md-3" style="height:70%;width:70%; margin:10px 10px 10px 10px;border-radius: 4px;box-shadow:0 0 1px 1px lightgrey;" >
+            <div class="row" style="padding: 10px 1px; border-radius:2px;">
+
+                        <div class="col-md-auto"  style=" width:auto; height:auto;">
+
+                                <div class="bd-example" >
+                                      <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+
+                                          <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                              <img  src= "https://s2.dmcdn.net/v/MtgAx1TCRu7sr42IB/x1080" class="d-block w-100" alt="...">
+                                              <div class="carousel-caption d-none d-md-block">
+                                              </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                              <img src="https://bam-investigations.com/wp-content/uploads/2018/11/BAM_ENTRLOMAS.jpg" class="d-block w-100" alt="...">
+
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="https://s2.dmcdn.net/v/MtgAx1TCRu7sr42IB/x1080" class="d-block w-100" alt="...">
+
+                                              </div>
+                                          </div>
+
+                                      </div>
+                                    </div>
+
+                                    <div class="col-md-auto">
+                                      <h6 class="text-center">Barabar Caves</h6>
+                                      <a href="https://en.wikipedia.org/wiki/Barabar_Caves" target="_blank"><i class="fa fa-wikipedia-w"></i>wikipedia</a><br>
+                                      <a href= "https://www.google.com/maps/place/Barabar+Caves/@25.0057976,85.0636189,15z/data=!4m5!3m4!1s0x0:0xad2f3cb154678175!8m2!3d25.0057976!4d85.0636189" target="_blank"><i class="fa fa-map-marker"></i>Location</a><br>
+                                      <a href=""><i class="fa fa-inbox"></i>Caves</a><br>
+                                      <a href="/weather#BIHAR"><i class="fa fa-umbrella"></i>weather</a>
+                                  </div></div>
+
+              </div>
+          </div>
+        </div>
+
+
+        <div class="row" >
+            <div class="col-md-3" style="height:70%;width:70%; margin:10px 10px 10px 10px;border-radius: 4px;box-shadow:0 0 1px 1px lightgrey;" >
+                <div class="row" style="padding: 10px 1px; border-radius:2px;">
+
+                            <div class="col-md-auto"  style=" width:auto; height:auto;">
+
+                                    <div class="bd-example" >
+                                          <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+
+                                              <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                  <img  src= "https://travelandleisureindia.in/wp-content/uploads/2019/02/Bihar-Museum-Feature-1.jpg" class="d-block w-100" alt="...">
+                                                  <div class="carousel-caption d-none d-md-block">
+                                                  </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                  <img src="https://media.architecturaldigest.in/wp-content/uploads/2017/11/bihar_banner.jpg" class="d-block w-100" alt="...">
+
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="https://travelandleisureindia.in/wp-content/uploads/2019/02/Bihar-Museum-Feature-1.jpg" class="d-block w-100" alt="...">
+
+                                                  </div>
+                                              </div>
+
+                                          </div>
+                                        </div>
+
+                                        <div class="col-md-auto">
+                                          <h6 class="text-center">Patna Museum</h6>
+                                          <a href="https://en.wikipedia.org/wiki/Patna_Museum" target="_blank"><i class="fa fa-wikipedia-w"></i>wikipedia</a><br>
+                                          <a href= "https://www.google.com/maps/place/Patna+Museum/@25.612727,85.1332734,15z/data=!4m5!3m4!1s0x0:0xa3a4580463faf378!8m2!3d25.612727!4d85.1332734" target="_blank"><i class="fa fa-map-marker"></i>Location</a><br>
+                                          <a href=""><i class="fa fa-inbox"></i>Museum</a><br>
+                                          <a href="/weather#BIHAR"><i class="fa fa-umbrella"></i>weather</a>
+                                      </div></div>
+
+                  </div>
+              </div>
+
+              <div class="col-md-3" style="height:70%;width:70%; margin:10px 10px 10px 10px;border-radius: 4px;box-shadow:0 0 1px 1px lightgrey;" >
+                <div class="row" style="padding: 10px 1px; border-radius:2px;">
+
+                            <div class="col-md-auto"  style=" width:auto; height:auto;">
+
+                                    <div class="bd-example" >
+                                          <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+
+                                              <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                  <img  src= "{{ url_for('static', filename='img/Mundeshwari1.jpg') }}/ " class="d-block w-100" alt="...">
+                                                  <div class="carousel-caption d-none d-md-block">
+                                                  </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                  <img src="{{ url_for('static', filename='img/Mundeshwari2.jpg') }}/ " class="d-block w-100" alt="...">
+
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="{{ url_for('static', filename='img/Mundeshwari3.jpg') }}/ " class="d-block w-100" alt="...">
+
+                                                  </div>
+                                              </div>
+
+                                          </div>
+                                        </div>
+
+                                        <div class="col-md-auto">
+                                          <h6 class="text-center">Mundeshwari Temple</h6>
+                                          <a href="https://en.wikipedia.org/wiki/Mundeshwari_Temple" target="_blank"><i class="fa fa-wikipedia-w"></i>wikipedia</a><br>
+                                          <a href= "https://www.google.com/maps/place/Maa+Mundeshwari+Temple/@24.9835101,83.5646674,15z/data=!4m5!3m4!1s0x0:0xf2c389e81820b357!8m2!3d24.9835101!4d83.5646674" target="_blank"><i class="fa fa-map-marker"></i>Location</a><br>
+                                          <a href=""><i class="fa fa-inbox"></i>Temple</a><br>
+                                          <a href="/weather#BIHAR"><i class="fa fa-umbrella"></i>weather</a>
+                                      </div></div>
+
+                  </div>
+              </div>
+
+
+              <div class="col-md-3" style="height:70%;width:70%; margin:10px 10px 10px 10px;border-radius: 4px;box-shadow:0 0 1px 1px lightgrey;" >
+                <div class="row" style="padding: 10px 1px; border-radius:2px;">
+
+                            <div class="col-md-auto"  style=" width:auto; height:auto;">
+
+                                    <div class="bd-example" >
+                                          <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+
+                                              <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                  <img  src= "{{ url_for('static', filename='img/Kesaria1.jpg') }}/" class="d-block w-100" alt="...">
+                                                  <div class="carousel-caption d-none d-md-block">
+                                                  </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                  <img src="{{ url_for('static', filename='img/Kesaria2.jpg') }}/" class="d-block w-100" alt="...">
+
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="{{ url_for('static', filename='img/Kesaria3.jpg') }}/" class="d-block w-100" alt="...">
+
+                                                  </div>
+                                              </div>
+
+                                          </div>
+                                        </div>
+
+                                        <div class="col-md-auto">
+                                          <h6 class="text-center">Kesaria stupa</h6>
+                                          <a href="https://en.wikipedia.org/wiki/Kesaria_stupa" target="_blank"><i class="fa fa-wikipedia-w"></i>wikipedia</a><br>
+                                          <a href= "https://www.google.com/maps/place/Kesariya+Buddha+Stupa/@26.3338388,84.8551781,15z/data=!4m5!3m4!1s0x0:0x259396406c2d4427!8m2!3d26.3338388!4d84.8551781" target="_blank"><i class="fa fa-map-marker"></i>Location</a><br>
+                                          <a href=""><i class="fa fa-inbox"></i>Zoo Botanical Garden</a><br>
+                                          <a href="/weather#BIHAR"><i class="fa fa-umbrella"></i>weather</a>
+                                      </div></div>
+
+                  </div>
+              </div>
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+    </div>
+      <!-- Footer -->
+<section id="footer">
+		<div class="container">
+			<div class="row text-center text-xs-center text-sm-left text-md-left">
+				<div class="col-xs-12 col-sm-4 col-md-3">
+					<h5>Home page</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="/home"><i class="fa fa-angle-double-right"></i>Home</a></li>
+
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-3">
+					<h5>About Us</h5>
+					<ul class="list-unstyled quick-links">
+
+						<li><a href="/about"><i class="fa fa-angle-double-right"></i>About</a></li>
+
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-3">
+					<h5>Weather</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="/weather"><i class="fa fa-angle-double-right"></i>Weather</a></li>
+
+					</ul>
+                </div>
+                <div style="margin: auto;" class="col-xs-12 col-sm-4 col-md-3">
+					<h5>Application</h5>
+					<ul class="list-unstyled quick-links">
+                        <li><a href=""><img src="/static/img/googleplay.jpg" style="height:30.5px;width:103.25px;border-radius:10px;"></li>
+						<li><a href=""><i class="fa fa-angle-double-right"></i>Soon on play store</a></li>
+
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+
+					<ul class="list-unstyled text-center" style="display: flex; margin: auto;justify-content: space-between;width: 50%;">
+                                    <li ><a href="javascript:void();"><img src="{{ url_for('static', filename='img/twitter.png') }}/" height="30px" width="30px"></a></li>
+                                    <li ><a href="https://www.instagram.com/sail_at_india/" target="_blank"><img src="{{ url_for('static', filename='img/instagram.png') }}/" height="30px" width="30px"></i></a></li>
+						<li ><a href="mailto:sailatindia@gmail.com"><img src="{{ url_for('static', filename='img/search.png') }}/" height="30px" width="30px"></a></li>
+
+                              </ul>
+				</div>
+				</hr>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+					<p>This site was built by <u><a href=""><b>Mechanical</b></a></u> Students Of Karpagam College of Engineering . For further enquiry contact above links of us</p>
+					<p class="h6">&copy All right Reserved.<a class="text-green ml-2" >Team SAIL_INDIA</a></p>
+				</div>
+				</hr>
+			</div>
+		</div>
+	</section>
+    <!-- ./Footer -->
+
+
+  </body>
+  </html>

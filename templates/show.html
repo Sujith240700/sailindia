@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title> Store</title>
+<style>body{background-image:url("static/images/te.jpg");
+background-repeat: no-repeat;background-size:cover;
+}</style>
+
+</head>
+<body>	<div>	<h2>Sail Store</h2>
+		{% if books %}
+		<table border=1>
+					<tr>
+				<th>user id</th>
+				<th>Username</th>
+				<th>Email</th>
+			</tr>
+			{% for book in books %}
+			<tr>
+				<td>{{book.id}}</td>
+				<td>{{book.username}}</td>
+				<td>{{book.email}}</td>
+			</tr>
+			{% endfor%}
+		</table>
+		{% else %}
+		<h3>No books yet</h3>
+		{% endif %}
+	</div>
+</body>
+</html>

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+        <head>
+        <title>SAIL INDIA - About</title>
+        <link rel="icon" href="{{ url_for('static', filename='img/logo.png') }}/" type="image/icon type">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}/">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <style>
+          .row{display:-ms-flexbox;display:flex;justify-content:center;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-right:-15px;}
+body{
+        background-color:black !important;
+
+    }
+    p{
+    color:black !important;
+}
+.snow2
+{
+	background:url("{{ url_for('static', filename='img/snow.png') }}/");
+	z-index:-3;
+	background-repeat:repeat;
+	width:100%;
+	height:100%;
+	position:absolute;
+	top:0;
+	left:0;
+	animation:animateSecond 20s infinite linear;
+
+}
+.snow1
+{
+	background:url("{{ url_for('static', filename='img/snow.png') }}/");
+	z-index:-2;
+	background-repeat:repeat;
+	width:100%;
+	height:100%;
+	position:absolute;
+	top:0;
+	left:0;
+	animation:animateSecond 40s infinite linear;
+
+}
+@keyframes animateOne
+{
+	0%
+	{
+		background-position: 0px 0px
+	}
+
+	100%
+	{
+		background-position: 100px 650px
+	}
+}
+
+
+@keyframes animateSecond
+{
+	0%
+	{
+		background-position: 0px -100px
+	}
+
+	100%
+	{
+		background-position: 0px 650px
+	}
+}
+          </style>
+
+
+
+
+</head>
+<body class="snow1">
+
+
+        <div id="wrapper">
+        <!--Nav bar-->
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="/home"><img src="{{ url_for('static', filename='img/logo.png') }}/"></a>
+                    <button class="navbar-toggler btn" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    &#9776;
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ml-auto text-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/weather">Weather</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href='/signup'>Sign-up</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about">About</a>
+                        </li>
+                        </ul>
+                    </div>
+                    </nav>
+
+        </div>
+
+        <!--Developers-->
+        <div>
+                <h1 style="margin-left:5%;">Developers</h1>
+
+             <div class="row" style="margin:auto;  justify-content: space-around;margin-top: 10px;">
+                <div class="rddwn flip-card row" >
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img src="/static/img/dpabout.jpg" class="d-block w-100" alt="Avatar" >
+                    </div>
+                    <div class="flip-card-back" >
+                      <h2>Sujith Manickam</h2>
+                      <p>Mechanical Engineer</p>
+                      <p>Web Designer</p>
+                      <div >
+                    <ul style="list-style: none;display:flex;justify-content: space-around;">
+                                          <li>
+                                            <a target="_blank" href="https://www.facebook.com/profile.php?id=100011039501078">
+                                              <i class="fa fa-facebook"></i>
+                                            </a>
+                                          </li>
+                                          <li>
+                                            <a target="_blank" href="https://twitter.com/sujithmanick">
+                                              <i class="fa fa-twitter"></i>
+                                            </a>
+                                          </li>
+                                          <li>
+                                            <a target="_blank" href="https://www.instagram.com/the_art_maker">
+                                              <i class="fa fa-instagram"></i>
+                                            </a>
+                                          </li>
+
+                                        </ul>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="rddwn flip-card">
+
+                        <div class="flip-card-inner">
+                          <div class="flip-card-front">
+                            <img src="/static/img/dpaboutdino.jpeg" class="d-block  w-100" alt="Avatar" >
+                          </div>
+                          <div class="flip-card-back">
+                            <h2>Dinesh Kumar</h2>
+                            <p>Mechanical Engineer</p>
+                            <p>Web Designer</p>
+                            <div >
+                          <ul style="list-style: none;display:flex;justify-content: space-around;">
+                                                <li>
+                                                  <a target="_blank" href="https://m.facebook.com/profile.php?lst=100018693764983%3A100018693764983%3A1572088424">
+                                                    <i class="fa fa-facebook"></i>
+                                                  </a>
+                                                </li>
+                                                <li>
+                                                  <a target="_blank" href="">
+                                                    <i class="fa fa-instagram"></i>
+                                                  </a>
+                                                </li>
+                                              </ul>
+                          </div>
+                          </div>
+                        </div>
+                      </div>
+
+                <div class="rddwn flip-card ">
+
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                    <img src="/static/img/dpaboutvinith.jpeg" class="d-block w-100" alt="Avatar" >
+                    </div>
+                    <div class="flip-card-back">
+                    <h2>Vineeth kuttan</h2>
+                    <p>Mechanical Engineer</p>
+                    <p>Backend Developer</p>
+                    <div >
+                    <ul style="list-style: none;display:flex;justify-content: space-around;">
+                                        <li>
+                                            <a target="_blank" href="https://m.facebook.com/vineeth.kuttan.5496">
+                                            <i class="fa fa-facebook"></i>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a target="_blank" href="https://www.instagram.com/_street_hunter/">
+                                            <i class="fa fa-instagram"></i>
+                                            </a>
+                                        </li>
+
+                                        </ul>
+                    </div>
+                    </div>
+                </div>
+                </div>
+                </div>
+            </div>
+
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+        <!-- Footer -->
+<section id="footer">
+		<div class="container">
+			<div class="row text-center text-xs-center text-sm-left text-md-left">
+				<div class="col-xs-12 col-sm-4 col-md-3">
+					<h5>Home page</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="/home"><i class="fa fa-angle-double-right"></i>Home</a></li>
+
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-3">
+					<h5>About Us</h5>
+					<ul class="list-unstyled quick-links">
+
+						<li><a href="/about"><i class="fa fa-angle-double-right"></i>About</a></li>
+
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-3">
+					<h5>Weather</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="/weather"><i class="fa fa-angle-double-right"></i>Weather</a></li>
+
+					</ul>
+                </div>
+                <div style="margin: auto;" class="col-xs-12 col-sm-4 col-md-3">
+					<h5>Application</h5>
+					<ul class="list-unstyled quick-links">
+                        <li><a href=""><img src="/static/img/googleplay.jpg" style="height:30.5px;width:103.25px;border-radius:10px;"></li>
+						<li><a href=""><i class="fa fa-angle-double-right"></i>Soon on play store</a></li>
+
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+
+					<ul class="list-unstyled text-center" style="display: flex; margin: auto;justify-content: space-between;width: 50%;">
+                                    <li ><a href="javascript:void();"><img src="{{ url_for('static', filename='img/twitter.png') }}/" height="30px" width="30px"></a></li>
+                                    <li ><a href="https://www.instagram.com/sail_at_india/" target="_blank"><img src="{{ url_for('static', filename='img/instagram.png') }}/" height="30px" width="30px"></i></a></li>
+						<li ><a href="mailto:sailatindia@gmail.com"><img src="{{ url_for('static', filename='img/search.png') }}/" height="30px" width="30px"></a></li>
+
+                              </ul>
+				</div>
+				</hr>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+					<p>This site was built by <u><a href=""><b>Mechanical</b></a></u> Students Of Karpagam College of Engineering . For further enquiry contact above links of us</p>
+					<p class="h6">&copy All right Reserved.<a class="text-green ml-2" >Team SAIL_INDIA</a></p>
+				</div>
+				</hr>
+			</div>
+		</div>
+	</section>
+    <!-- ./Footer -->
+
+  </body>
+  </html>
